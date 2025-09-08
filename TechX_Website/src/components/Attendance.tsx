@@ -1,4 +1,4 @@
-import {UserStar} from "lucide-react";
+import {UserStar, MicVocal, Cpu} from "lucide-react";
 
 
 export default function WhyAttend(){
@@ -21,33 +21,28 @@ export default function WhyAttend(){
                 </div>
 
                 <h2 className={"text-3xl tracking-tight font-bold"}> Networking </h2>
-                <p> lorem ipsum dolor amet...</p>
+                <p className={"w-[85%] text-lg text-gray-600 text-center text-balance"}> Connect with industry peers, potential partners, and investors in a dynamic environment.</p>
             </div>
 
             <div className={"w-full pt-[5rem] flex flex-col justify-center items-center gap-[2rem]"}>
 
                 <div className={"w-[135px] h-[135px] rounded-full bg-[#FFA300] flex justify-center items-center "}>
-                    <UserStar className={"w-[60px] h-[60px]"} color={"#00629B"} strokeWidth={1} size={40}/>
+                    <MicVocal className={"w-[60px] h-[60px]"} color={"#00629B"} strokeWidth={1} size={40}/>
                 </div>
 
-                <h2 className={"text-3xl tracking-tight font-bold"}> Networking </h2>
-                <p> lorem ipsum dolor amet...</p>
+                <h2 className={"text-3xl tracking-tight font-bold"}> Distinguished Speakers </h2>
+                <p className={"w-[85%] text-lg text-gray-600 text-center text-balance"}> Hear from leading experts and visionaries who are shaping the future of technology. </p>
             </div>
 
-            <div className={"w-full pt-[5rem] flex flex-col justify-center items-center gap-[2rem]"}>
+            <div className={"w-full pt-[5rem] flex flex-col justify-center items-center gap-[2rem] pb-[2rem]"}>
 
                 <div className={"w-[135px] h-[135px] rounded-full bg-[#FFA300] flex justify-center items-center "}>
-                    <UserStar className={"w-[60px] h-[60px]"} color={"#00629B"} strokeWidth={1} size={40}/>
+                    <Cpu className={"w-[60px] h-[60px]"} color={"#00629B"} strokeWidth={1} size={40}/>
                 </div>
 
-                <h2 className={"text-3xl tracking-tight font-bold"}> Networking </h2>
-                <p> lorem ipsum dolor amet...</p>
+                <h2 className={"text-3xl tracking-tight font-bold"}> AI Workshops </h2>
+                <p className={"w-[85%] text-lg text-gray-600 text-center text-balance"}> Gain practical skills and knowledge through a variety of hands-on workshops. </p>
             </div>
-
-
-
-
-
 
         </div>
 
