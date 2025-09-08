@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar.tsx";
-import "./App.css"
+import './App.css'
 import Hero_Section from "./components/Hero_Section.tsx";
 
 function App() {
