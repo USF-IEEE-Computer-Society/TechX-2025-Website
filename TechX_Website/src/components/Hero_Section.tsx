@@ -6,7 +6,7 @@ export default function Hero_Section(){
     return (
         <div className={"relative w-screen h-[35rem] bg-stone-200"}> <div/>
             <img src={hero} className={"w-screen h-full"}/>
-            <div className={"absolute top-0 opacity-50 w-screen h-full bg-black z-1"}  />git push -u origin your-branch-name
+            <div className={"absolute top-0 opacity-50 w-screen h-full bg-black z-1"} />
             <div className={"absolute top-45 flex flex-col justify-center items-center z-2 gap-4 w-full"}>
                 <h1 className={"text-white text-4xl"}> TechX Florida 2025 </h1>
                 <p className={"text-white text-lg text-center"}> Innovate. Connect. Transform. Join us for the premier tech conference of the year. </p>
