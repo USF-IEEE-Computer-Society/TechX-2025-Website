@@ -5,7 +5,7 @@ export default function Footer(){
     return (
         <div className={"w-screen h-auto pb-[3rem] bg-[#101724] flex flex-col items-center"}>
 
-            <div className={"w-[75%] flex justify-around pt-[5rem]"}>
+            <div className={"w-[75%] flex justify-around pt-[2rem]"}>
                 <p className={"font-light text-[#C9C9C9]"}> About </p>
                 <p className={"font-light text-[#C9C9C9]"}> Sponsors </p>
                 <p className={"font-light text-[#C9C9C9]"}> Contact </p>
