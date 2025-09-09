@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+
+
+.Roboto{
+    font-family: "Roboto Light", "Roboto Thin", serif;
+}

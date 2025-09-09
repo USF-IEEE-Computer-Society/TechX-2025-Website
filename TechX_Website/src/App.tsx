@@ -1,6 +1,12 @@
-import Navbar from "./components/Navbar.tsx";
 import './App.css'
-import Hero_Section from "./components/Hero_Section.tsx";
+import WhyAttend from "./components/Attendance";
+import Hero_Section from "./components/Hero_Section";
+import Navbar from "./components/Navbar";
+import Highlights from "./components/Highlights";
+import Get_Tickets from "./components/Get_Tickets";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
+
 
 function App() {
 
@@ -9,6 +15,11 @@ function App() {
     <>
         <Navbar/>
         <Hero_Section/>
+        <WhyAttend/>
+        <Highlights/>
+        <Get_Tickets/>
+        <FAQ/>
+        <Footer/>
 
     </>
   )
