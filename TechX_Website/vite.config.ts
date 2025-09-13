@@ -8,5 +8,5 @@ export default defineConfig({
       react(),
       tailwindcss()
   ],
-    base: '/TechXFlorida2025/',
+    base: '/TechX-Website/',
 })
