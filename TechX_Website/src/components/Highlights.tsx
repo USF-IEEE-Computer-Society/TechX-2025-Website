@@ -1,4 +1,4 @@
-import hero from "../assets/istockphoto-535415025-612x612.jpg"
+import hero from "../assets/1097988940.webp"
 
 export default function Highlights(){
 
