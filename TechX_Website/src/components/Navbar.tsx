@@ -1,5 +1,5 @@
 
-import logo from "../assets/logo.jpeg"
+import logo from "../assets/logoTechX.jpeg"
 
 export default function Navbar(){
 
