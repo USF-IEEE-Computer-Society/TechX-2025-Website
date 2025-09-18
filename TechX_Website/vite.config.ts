@@ -8,6 +8,9 @@ export default defineConfig({
       react(),
       tailwindcss()
   ],
-    base: '/',
-  build: { outDir: 'docs' }
+   base: '/TechX-Website/',
+    build: {
+      outDir: 'docs',
+      emptyOutDir: false
+    }
 })
