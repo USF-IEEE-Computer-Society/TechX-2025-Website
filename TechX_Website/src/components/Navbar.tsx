@@ -1,6 +1,6 @@
 
-import logo from "../assets/logoTechX.jpeg"
-import logo2 from "../assets/ieee-cs-logo.png"
+import logo from "../assets/logoTechX.webp"
+import logo2 from "../assets/ieee-cs-logo.webp"
 
 export default function Navbar(){
 
