@@ -7,8 +7,8 @@ export default function Navbar(){
     return (
        <div className={"w-screen h-[6rem] bg-white shadow-md flex items-center justify-between"}>
         <div className="flex items-center gap-4 pl-[1rem]">
-            <img src={logo} alt="TechX 2025 Logo" className="h-[4rem] w-auto" />
-            <img src={logo2} alt="IEEE CS Logo" className="h-[4rem] w-auto" />
+            <img src={logo} alt="TechX 2025 Logo" className="h-[2.5rem] md:h-[4rem] w-[7rem] md:w-[14rem]" />
+            <img src={logo2} alt="IEEE CS Logo" className="h-[2.5rem] md:h-[4rem] w-[7rem] md:w-[14rem]" />
         </div>
 
            <div className={"w-[50px] h-[50px] flex flex-col gap-1 justify-center items-center pr-[1rem]"}>
