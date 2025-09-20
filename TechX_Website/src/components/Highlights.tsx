@@ -3,7 +3,7 @@ import hero from "../assets/1097988940.webp"
 export default function Highlights(){
 
     return (
-        <div className={"w-screen h-auto bg-white flex flex-col items-center mt-4 gap-[2rem] pb-[2rem] "}>
+        <div id='Events' className={"w-screen h-auto bg-white flex flex-col items-center mt-4 gap-[2rem] pb-[2rem] "}>
 
             <div className={"w-screen flex flex-col justify-center items-center gap-3"}>
                 <h2 className={"text-4xl md:text-5xl tracking-tight font-bold pt-[3rem]"}> Event Highlights </h2>

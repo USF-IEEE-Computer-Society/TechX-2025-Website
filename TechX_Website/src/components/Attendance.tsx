@@ -4,7 +4,7 @@ import {UserStar, MicVocal, Cpu} from "lucide-react";
 export default function WhyAttend(){
 
     return (
-        <div className={"w-screen bg-[#F5F5F5] flex flex-col gap-[1rem] pb-[4rem]"}>
+        <div id={"Attend"} className={"w-screen bg-[#F5F5F5] flex flex-col gap-[1rem] pb-[4rem]"}>
 
             <div className={"w-full pt-[5rem] flex flex-col justify-center items-center gap-[4rem]"}>
                 <h2 className={"text-3xl md:text-5xl tracking-tight font-bold"}> Why Attend </h2>
