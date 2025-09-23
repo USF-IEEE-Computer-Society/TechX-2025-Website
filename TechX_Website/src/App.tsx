@@ -6,6 +6,7 @@ import Highlights from "./components/Highlights";
 import Get_Tickets from "./components/Get_Tickets";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import Companies from "./components/Companies";
 
 
 function App() {

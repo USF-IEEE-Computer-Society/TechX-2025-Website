@@ -1,7 +1,7 @@
 import logo from "../assets/logoTechX.webp"
 import logo2 from "../assets/ieee-cs-logo.webp"
 import {useState} from "react";
-import {Brain, BrainCircuit} from "lucide-react";
+import {Brain, BrainCircuit, Cog, CircuitBoard, Atom} from "lucide-react";
 
 export default function Navbar(){
     const [IsOpen, SetOpen] = useState<boolean>(false)
@@ -24,27 +24,47 @@ export default function Navbar(){
 
            </div>
 
-            <div className={`absolute top-full overflow-hidden w-full z-3 grid grid-cols-2 lg:grid-cols-4 justify-items-center items-center ${IsOpen? "opacity-100 h-[14rem] lg:h-[16rem]": "opacity-0 h-0"} transition-all duration-300 ease-in-out bg-white`}>
+            <div className={`absolute top-full overflow-hidden w-full z-3 grid grid-cols-2 lg:grid-cols-4 justify-items-center items-center ${IsOpen? "opacity-100 h-[22rem] md:h-[20rem] lg:h-[16rem]": "opacity-0 h-0"} transition-all duration-300 ease-in-out bg-stone-100`}>
 
-                <a href={'#Attend'} className={"w-[93%] h-[97%] lg:w-[85%] lg:h-[85%] flex flex-col justify-center items-center rounded-xl border border-stone-150"}>
-                    <BrainCircuit/>
-                    <h2> Events </h2>
+                <a href={'#Attend'} className={"w-[93%] h-[93%] md:h-[85%] lg:w-[80%] lg:h-[80%] flex flex-col justify-center items-center rounded-xl border border-[#001024] hover:scale-105 duration-200 ease-in-out gap-y-2"}>
+
+                    <div className={"flex flex-col justify-center items-center"}>
+                        <BrainCircuit color={"#001024"} size={40}/>
+                        <h2 className={"text-lg color-[#001024]"}> Attendance </h2>
+
+                    </div>
+                     <p className={"w-[90%] text-center text-balance"}>  Your presence makes the event complete. </p>
                 </a>
 
 
-               <a href={'#Events'}  className={"w-[93%] h-[97%] lg:w-[85%] lg:h-[85%] flex flex-col justify-center items-center rounded-xl border border-stone-150"}>
-                    <BrainCircuit/>
-                    <h2> Events </h2>
+               <a href={'#Events'}  className={"w-[93%] h-[93%] md:h-[85%] lg:w-[80%] lg:h-[80%] flex flex-col justify-center items-center rounded-xl border border-[#001024] hover:scale-105 duration-200 ease-in-out gap-y-2"}>
+
+                      <div className={"flex flex-col justify-center items-center"}>
+                        <Cog size={40}/>
+                        <h2 className={"text-lg"}> Events </h2>
+                      </div>
+
+                      <p className={"w-[90%] text-center text-balance"}> Don’t miss what’s coming up. </p>
                 </a>
 
-               <a href={'Register'} className={"w-[93%] h-[97%] lg:w-[85%] lg:h-[85%] flex flex-col justify-center items-center rounded-xl border border-stone-150"}>
-                    <BrainCircuit/>
-                    <h2> Events </h2>
+               <a href={'Register'} className={"w-[93%] h-[93%] md:h-[85%] lg:w-[80%] lg:h-[80%] flex flex-col justify-center items-center rounded-xl border border-[#001024] hover:scale-105 duration-200 ease-in-out gap-y-2"}>
+
+                   <div className={"flex flex-col justify-center items-center"}>
+                        <CircuitBoard size={40}/>
+                        <h2 className={"text-lg"}> Tickets </h2>
+                   </div>
+
+                    <p className={"w-[90%] text-center text-balance"}> Grab your tickets before they’re gone. </p>
                 </a>
 
-                <a href={'#FAQ'} className={"w-[93%] h-[97%] lg:w-[85%] lg:h-[85%] flex flex-col justify-center items-center rounded-xl border border-stone-150"}>
-                    <BrainCircuit/>
-                    <h2> Events </h2>
+               <a href={'#FAQ'} className={"w-[93%] h-[93%] md:h-[85%] lg:w-[80%] lg:h-[80%] flex flex-col justify-center items-center rounded-xl border border-[#001024] hover:scale-105 duration-200 ease-in-out gap-y-2"}>
+
+                   <div className={"flex flex-col justify-center items-center"}>
+                        <Atom size={40}/>
+                        <h2 className={"text-lg"}> FAQ </h2>
+                   </div>
+
+                    <p className={"w-[90%] text-center text-balance"}>  Everything you need to know, in one place. </p>
                 </a>
 
 
