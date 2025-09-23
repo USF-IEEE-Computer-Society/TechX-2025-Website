@@ -12,8 +12,8 @@ export default function Navbar(){
 
            <div className={"w-screen h-[6rem] bg-white shadow-md flex items-center justify-between"}>
             <div className="flex items-center gap-4 pl-[1rem]">
-                <img src={logo} alt="TechX 2025 Logo" className="h-[2.5rem] md:h-[4rem] w-[7rem] md:w-[14rem]" />
-                <img src={logo2} alt="IEEE CS Logo" className="h-[2.5rem] md:h-[4rem] w-[7rem] md:w-[14rem]" />
+                <img src={logo} alt="TechX 2025 Logo" className="h-[2.5rem] md:h-[4rem] w-[7.5rem] md:w-[14rem]" />
+                <img src={logo2} alt="IEEE CS Logo" className="h-[2.5rem] md:h-[4rem] w-[7.5rem] md:w-[14rem]" />
             </div>
 
                <button onClick={()=> SetOpen(state => !state)} className={"relative w-[50px] h-[50px] flex flex-col gap-1 justify-center items-center pr-[1rem]"}>
@@ -47,7 +47,7 @@ export default function Navbar(){
                       <p className={"w-[90%] text-center text-balance"}> Don’t miss what’s coming up. </p>
                 </a>
 
-               <a href={'Register'} className={"w-[93%] h-[93%] md:h-[85%] lg:w-[80%] lg:h-[80%] flex flex-col justify-center items-center rounded-xl border border-[#001024] hover:scale-105 duration-200 ease-in-out gap-y-2"}>
+               <a href={'#Register'} className={"w-[93%] h-[93%] md:h-[85%] lg:w-[80%] lg:h-[80%] flex flex-col justify-center items-center rounded-xl border border-[#001024] hover:scale-105 duration-200 ease-in-out gap-y-2"}>
 
                    <div className={"flex flex-col justify-center items-center"}>
                         <CircuitBoard size={40}/>
