@@ -17,6 +17,7 @@ export default function Highlights(){
 
                     <div>
                         <h2 className={"text-2xl font-bold pl-[1rem] pt-[2rem]"}> Cat Playing Xbox</h2>
+                        <h3 className={"text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight font-bold pl-[1rem]"}> Microsoft </h3>
                         <p className={"w-[90%] text-md md:text-xl  text-gray-600 pt-1 pl-[1rem]"}> Explore the exciting features and activities planned for TechX Florida 2025 </p>
                     </div>
 
@@ -27,6 +28,7 @@ export default function Highlights(){
 
                     <div>
                         <h2 className={"text-2xl font-bold pl-[1rem] pt-[2rem]"}> Cat Playing Xbox</h2>
+                        <h3 className={"text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight font-bold pl-[1rem]"}> Microsoft </h3>
                         <p className={"w-[90%] text-md md:text-xl  text-gray-600 pt-1 pl-[1rem]"}> Explore the exciting features and activities planned for TechX Florida 2025 </p>
                     </div>
                 </div>
@@ -35,6 +37,7 @@ export default function Highlights(){
                     <img className={"w-full h-[28vh] bg-black rounded-t-xl object-fit"} src={hero}/>
                     <div>
                         <h2 className={"text-2xl font-bold pl-[1rem] pt-[2rem]"}> Cat Playing Xbox</h2>
+                        <h3 className={"text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight font-bold pl-[1rem]"}> Microsoft </h3>
                         <p className={"w-[90%] text-md md:text-xl  text-gray-600 pt-1 pl-[1rem]"}> Explore the exciting features and activities planned for TechX Florida 2025 </p>
                     </div>
                 </div>
@@ -43,6 +46,7 @@ export default function Highlights(){
                     <img className={"w-full h-[28vh] bg-black rounded-t-xl object-fit"} src={hero}/>
                     <div>
                         <h2 className={"text-2xl font-bold pl-[1rem] pt-[2rem]"}> Cat Playing Xbox</h2>
+                        <h3 className={"text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight font-bold pl-[1rem]"}> Microsoft </h3>
                         <p className={"w-[90%] text-md md:text-xl  text-gray-600 pt-1 pl-[1rem]"}> Explore the exciting features and activities planned for TechX Florida 2025 </p>
                     </div>
                 </div>
@@ -51,6 +55,7 @@ export default function Highlights(){
                     <img className={"w-full h-[28vh] bg-black rounded-t-xl object-fit"} src={hero}/>
                     <div>
                         <h2 className={"text-2xl font-bold pl-[1rem] pt-[2rem]"}> Cat Playing Xbox</h2>
+                        <h3 className={"text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight font-bold pl-[1rem]"}> Microsoft </h3>
                         <p className={"w-[90%] text-md md:text-xl  text-gray-600 pt-1 pl-[1rem]"}> Explore the exciting features and activities planned for TechX Florida 2025 </p>
                     </div>
                 </div>
