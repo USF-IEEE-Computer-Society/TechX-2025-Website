@@ -11,7 +11,7 @@ export default function Get_Tickets(){
 
             </p>
 
-            <div className={"flex gap-x-4"}>
+            <div className={"flex gap-x-2"}>
 
                 <a className={"hover:scale-110 duration-300 ease-in-out cursor-pointer"} href="https://bullsconnect.usf.edu/ieeecs/rsvp_boot?id=1985102" target="_blank" rel="noopener noreferrer">
                   <button className={"w-[11rem] h-[4rem] bg-[#FFA300] rounded mt-[2rem]"}>
@@ -20,7 +20,7 @@ export default function Get_Tickets(){
                 </a>
 
                  <a className={"hover:scale-110 duration-300 ease-in-out cursor-pointer"} href="https://events.vtools.ieee.org/m/499182"  target="_blank" rel="noopener noreferrer">
-                  <button className={"w-[11rem] h-[4rem] border-2 border-[#FFA300]  rounded mt-[2rem]"}>
+                  <button className={"w-[11rem] h-[4rem] border-2 border-[#FFA300] rounded mt-[2rem]"}>
                         <h2 className={"text-sm font-bold text-[#FFF] text-balance text-center"}> Register Non-USF </h2>
                   </button>
                 </a>
