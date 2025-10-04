@@ -3,7 +3,9 @@
 export default function Footer(){
 
     return (
-        <div className={"w-screen h-auto pb-[3rem] bg-[#101724] flex flex-col items-center"}>
+        <div className={"w-full h-auto pb-[3rem] bg-[#101724] flex flex-col items-center"}>
+            {
+                /*
 
             <div className={"w-[75%] flex justify-around pt-[2rem]"}>
                 <p className={"font-light text-[#C9C9C9]"}> About </p>
@@ -12,6 +14,9 @@ export default function Footer(){
                 <p className={"font-light text-[#C9C9C9]"}> FAQ </p>
 
             </div>
+
+                 */
+            }
 
             <div className={"w-[50%] flex justify-center items-center pt-[2rem] gap-[2rem]"}>
 

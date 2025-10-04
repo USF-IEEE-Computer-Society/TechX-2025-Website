@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
-
+/* Prevent horizontal scrollbar */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
 .Roboto{
     font-family: "Roboto Light", "Roboto Thin", serif;
