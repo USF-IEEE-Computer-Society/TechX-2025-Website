@@ -8,10 +8,6 @@ export default function WhyAttend(){
 
             <div className={"w-full pt-[5rem] flex flex-col justify-center items-center gap-[4rem]"}>
                 <h2 className={"text-3xl md:text-5xl tracking-tight font-bold"}> Why Attend </h2>
-                <p className={"w-[85%] text-lg md:text-3xl text-gray-600 text-center text-balance"}>
-                    TechX Florida 2025 is the ultimate gathering for tech professionals, innovators, and thought leaders.
-                    Here's what you can expect:
-                </p>
             </div>
 
             <div className={"grid lg:grid-cols-3 justify-items-center items-start pb-[2rem]"}>

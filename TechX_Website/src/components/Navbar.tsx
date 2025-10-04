@@ -12,7 +12,7 @@ export default function Navbar(){
 
             <nav className="w-full flex flex-col-reverse md:flex-row items-center justify-between md:px-30 py-4 bg-white shadow">
 
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-6 text-xl underline font-bold">
                     <a href="#home" className="text-gray-800 hover:text-black font-medium">
                         Home
                     </a>

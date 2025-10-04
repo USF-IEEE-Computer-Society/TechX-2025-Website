@@ -40,7 +40,13 @@ export const speakers = [
         talkTitle: "Playing with AI: Gamification for Endangered Language Models",
         headshot: "../src/assets/speakers/joe.png",
         linkedinLink: "https://www.linkedin.com/in/thejoeblankenship/",
-    },
+    }
+
+];
+
+const stash =[
+
+
     {
         name: "Antra Malhotra",
         company: "Verizon",
@@ -56,6 +62,6 @@ export const speakers = [
         linkedinLink: "https://www.linkedin.com/in/dominic-patruno-04109456/",
     }
 
-];
+]
 
 export default speakers;
