@@ -10,9 +10,9 @@ export default function Navbar(){
     return (
         <div className={'relative'}>
 
-            <nav className="w-full flex flex-col-reverse md:flex-row items-center justify-between md:px-30 py-4 bg-white shadow">
+            <nav className="w-full flex flex-col-reverse md:flex-row items-center justify-between md:px-30 py-5 bg-white shadow gap-7">
 
-                <div className="flex items-center gap-6 text-xl underline font-bold">
+                <div className="flex items-center gap-6 text-2xl underline font-bold">
                     <a href="#home" className="text-gray-800 hover:text-black font-medium">
                         Home
                     </a>
@@ -23,8 +23,8 @@ export default function Navbar(){
 
 
                 <div className="flex items-center gap-6 pr-2">
-                    <img src={logo} alt="TechX 2025 Logo" className="h-[2.5rem] md:h-[4rem] w-[7.5rem] md:w-[14rem]"/>
-                    <img src={logo2} alt="IEEE CS Logo" className="h-[2.5rem] md:h-[4rem] w-[7.5rem] md:w-[14rem]"/>
+                    <img src={logo} alt="TechX 2025 Logo" className="h-10 md:h-[4rem]"/>
+                    <img src={logo2} alt="IEEE CS Logo" className="h-10 md:h-[4rem]"/>
                 </div>
 
 

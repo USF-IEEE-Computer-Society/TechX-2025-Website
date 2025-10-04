@@ -1,5 +1,3 @@
-import hero from "../assets/1097988940.webp";
-
 import linkedin from "../assets/LinkedIn_icon.svg.png";
 
 interface SpeakerCardProps {
