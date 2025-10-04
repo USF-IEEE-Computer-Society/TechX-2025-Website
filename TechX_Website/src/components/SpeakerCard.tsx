@@ -10,7 +10,7 @@ interface SpeakerCardProps {
 
 export default function SpeakerCard(props: SpeakerCardProps) {
     return (
-        <div className={"w-[100%] md:w-[100%] h-[52vh] md:h-[65vh] flex flex-col rounded-xl mb-5"}>
+        <div className={"w-[100%] md:w-[100%] h-[55vh] md:h-[70vh] flex flex-col rounded-xl mb-5"}>
 
             <img className={"rounded-t-xl object-fit"} src={props.headshot} />
 

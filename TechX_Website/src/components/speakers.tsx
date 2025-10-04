@@ -6,6 +6,7 @@ import annaImg from "../assets/speakers/anna.png";
 import yasmineImg from "../assets/speakers/yasmine.png";
 import joeImg from "../assets/speakers/joe.png";
 import antraImg from "../assets/speakers/antra.png";
+import subhajitImg from "../assets/speakers/subhajit.png";
 
 export const speakers = [
     {
@@ -31,7 +32,7 @@ export const speakers = [
     },
     {
         name: "Anna Bakhvalova",
-        company: "",
+        company: "Career Pathway Institute",
         talkTitle: "AI's Impact on Marketing: Trends and Anti-trends",
         headshot: annaImg,
         linkedinLink: "https://www.linkedin.com/in/annabakhvalova/",
@@ -49,6 +50,13 @@ export const speakers = [
         talkTitle: "Playing with AI: Gamification for Endangered Language Models",
         headshot: joeImg,
         linkedinLink: "https://www.linkedin.com/in/thejoeblankenship/",
+    },
+    {
+        name: "Subhajit Paul",
+        company: "Jabil",
+        talkTitle: "AI application in ERP: Effective Mobile Material Placement in Warehouse using AI/ML",
+        headshot: subhajitImg,
+        linkedinLink: "https://www.linkedin.com/in/subhajit-paul-4a79a78/",
     }
 
 ];
