@@ -10,8 +10,8 @@ type Faq_Block = {
 
 let Questions: Faq_Block[] = [
     {id: 0, Question: "Will there be any available parking for visitors?", Response: 'Yes! Visitor parking will be available on campus near the main venue. Please follow the posted signs or check our website for a parking map.'},
-    {id: 1, Question: "What time does the event start?", Response: "The event kicks off at 9:00 AM with registration and check-in. Opening remarks begin at 10:00 AM sharp."},
-    {id: 2, Question: "Where is the event happening?", Response: "TechX will take place at the University of South Florida’s Marshall Student Center. The main sessions will be held in the Oval Theater."},
+    {id: 1, Question: "What time does the event start?", Response: "Mark your calendars for November 8. The event kicks off at 11:00 AM with registration and check-in and ends at 5:00 PM."},
+    {id: 2, Question: "Where is the event happening?", Response: "TechX will take place at the University of South Florida’s Engineering 2 building. "},
     {id: 3, Question: "Where can I see the full TechX schedule?", Response: "You can find the full schedule on our official website at techxflorida.com/schedule, or through the event app."},
     {id: 4, Question: "Will there be any recordings of the talks?", Response: "Yes, all keynote talks and selected breakout sessions will be recorded. The recordings will be made available to registered attendees after the event."},
 ]
@@ -22,8 +22,11 @@ export default function FAQ(){
     const [OpenMenus, SetOpenMenus] = useState<boolean[]>(new Array<boolean>(Questions.length))
 
     return (
-        <div id='FAQ' className={"w-screen h-auto pb-[1rem] bg-[#FFFEFE] flex flex-col items-center "}>
+        <div id='FAQ' className={"w-full h-auto pb-[1rem] bg-[#FFFEFE] flex flex-col items-center mb-7"}>
             <h1 className={'text-2xl md:text-4xl tracking-tight font-bold pt-[2rem]'}> Frequently Asked Questions </h1>
+
+
+
 
             {Questions.map(Question => (
 
@@ -32,11 +35,11 @@ export default function FAQ(){
                     <div key={Question.id} className={`flex flex-col border border-black h-[4rem] ${OpenMenus[Question.id]? "rounded-t-xl": "rounded-xl"}  w-[80%] bg-[#D9D9D9] mt-[1rem] flex pl-[1rem]`}>
 
                         <div className={"w-full h-[4rem] flex justify-between items-center"}>
-                            <h2 className={"w-[88%] text-left flex items-center text-md h-full"}> {Question.Question}</h2>
 
-                            <button onClick={()=> ToggleButton(Question.id)} className={"relative w-[12%] flex justify-center items-center h-full hover:cursor-pointer"}>
-                                <div className={`absolute w-[15px] h-[2px] ${OpenMenus[Question.id]? " rotate-225": ""} duration-300 ease-in-out bg-black`}/>
-                                <div className={`absolute h-[15px] w-[2px]  ${OpenMenus[Question.id]? "rotate-225": ""} duration-300 ease-in-out bg-black`}/>
+                            <button onClick={()=> ToggleButton(Question.id)} className={"relative w-[100%] flex items-center h-full hover:cursor-pointer"}>
+                                {Question.Question}
+                                <div className={`hidden absolute w-[15px] h-[2px] ${OpenMenus[Question.id]? " rotate-225": ""} duration-300 ease-in-out bg-black`}/>
+                                <div className={`hidden absolute h-[15px] w-[2px]  ${OpenMenus[Question.id]? "rotate-225": ""} duration-300 ease-in-out bg-black`}/>
                             </button>
                         </div>
 
@@ -54,6 +57,7 @@ export default function FAQ(){
 
 
             ))}
+
 
 
         </div>
