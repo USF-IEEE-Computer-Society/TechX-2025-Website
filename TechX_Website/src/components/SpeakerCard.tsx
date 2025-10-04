@@ -2,7 +2,15 @@ import hero from "../assets/1097988940.webp";
 
 import linkedin from "../assets/LinkedIn_icon.svg.png";
 
-export default function SpeakerCard(props) {
+interface SpeakerCardProps {
+    headshot: string;
+    name: string;
+    linkedinLink: string;
+    company: string;
+    talkTitle: string;
+}
+
+export default function SpeakerCard(props: SpeakerCardProps) {
     return (
         <div className={"w-[100%] md:w-[100%] h-[52vh] md:h-[65vh] flex flex-col rounded-xl mb-5"}>
 
