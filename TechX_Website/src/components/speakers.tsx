@@ -7,6 +7,7 @@ import yasmineImg from "../assets/speakers/yasmine.png";
 import joeImg from "../assets/speakers/joe.png";
 import antraImg from "../assets/speakers/antra.png";
 import subhajitImg from "../assets/speakers/subhajit.png";
+import lenarImg from "../assets/speakers/lenar.png";
 
 export const speakers = [
     {
@@ -15,6 +16,7 @@ export const speakers = [
         talkTitle: "Copilot in Action: Real-World AI Use Cases in Solutions.",
         headshot: reginaldImg,
         linkedinLink: "https://www.linkedin.com/in/reginald-j-davis-mcsa-mct-itil-prosci-970ba77/",
+        pills:["Speaker", "Panel"]
     },
     {
         name: "Raghuvan Lakshmana",
@@ -22,6 +24,7 @@ export const speakers = [
         talkTitle: "Interactive Document Search Using a Custom AI model",
         headshot: raghuvanImg,
         linkedinLink: "https://www.linkedin.com/in/raghavanl/",
+        pills:["Workshop"]
     },
     {
         name: "Mrinal Karvir",
@@ -29,6 +32,7 @@ export const speakers = [
         talkTitle: "The Last Mile of Generative AI: Turning Ideas into Impact at Enterprise Scale",
         headshot: mrinalImg,
         linkedinLink: "https://www.linkedin.com/in/mrinalkarvir/",
+        pills:["Speaker", "Panel", "IEEECS"]
     },
     {
         name: "Anna Bakhvalova",
@@ -36,6 +40,7 @@ export const speakers = [
         talkTitle: "AI's Impact on Marketing: Trends and Anti-trends",
         headshot: annaImg,
         linkedinLink: "https://www.linkedin.com/in/annabakhvalova/",
+        pills:["Speaker", "Panel"]
     },
     {
         name: "Yasmine Gardiner",
@@ -43,6 +48,7 @@ export const speakers = [
         talkTitle: "Vibe coding rework in progress",
         headshot: yasmineImg,
         linkedinLink: "https://www.linkedin.com/in/yasmine-gardiner-0b0720100/",
+        pills:["Workshop"]
     },
     {
         name: "Joe Blankership",
@@ -50,6 +56,7 @@ export const speakers = [
         talkTitle: "Playing with AI: Gamification for Endangered Language Models",
         headshot: joeImg,
         linkedinLink: "https://www.linkedin.com/in/thejoeblankenship/",
+        pills:["Speaker"]
     },
     {
         name: "Subhajit Paul",
@@ -57,6 +64,15 @@ export const speakers = [
         talkTitle: "AI application in ERP: Effective Mobile Material Placement in Warehouse using AI/ML",
         headshot: subhajitImg,
         linkedinLink: "https://www.linkedin.com/in/subhajit-paul-4a79a78/",
+        pills:["Speaker", "IEEECS"]
+    },
+    {
+        name: "Lenar Mukhamadiev",
+        company: "Idelsoft",
+        talkTitle: "",
+        headshot: lenarImg,
+        linkedinLink: "https://www.linkedin.com/in/lenarm/",
+        pills:["Panel"]
     }
 
 ];
@@ -70,6 +86,7 @@ const stash =[
         talkTitle: "WIP",
         headshot: antraImg,
         linkedinLink: "https://www.linkedin.com/in/antra-malhotra-455b608/",
+        pills:["Speaker", "IEEECS"]
     },
     {
         name: "Dominic Patruno",
@@ -77,6 +94,7 @@ const stash =[
         talkTitle: "???",
         headshot: reginaldImg,
         linkedinLink: "https://www.linkedin.com/in/dominic-patruno-04109456/",
+        pills:["Speaker", "IEEECS"]
     }
 
 ]

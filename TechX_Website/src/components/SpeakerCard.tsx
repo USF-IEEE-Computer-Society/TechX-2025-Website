@@ -6,11 +6,12 @@ interface SpeakerCardProps {
     linkedinLink: string;
     company: string;
     talkTitle: string;
+    pills: string[];
 }
 
 export default function SpeakerCard(props: SpeakerCardProps) {
     return (
-        <div className={"w-[100%] md:w-[100%] h-[55vh] md:h-[70vh] flex flex-col rounded-xl mb-5"}>
+        <div className={"w-[100%] md:w-[100%] h-[60vh] md:h-[75vh] flex flex-col rounded-xl mb-5"}>
 
             <img className={"rounded-t-xl object-fit"} src={props.headshot} />
 
@@ -24,6 +25,11 @@ export default function SpeakerCard(props: SpeakerCardProps) {
                 </div>
                 <h3 className={"text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight font-bold"}>{props.company}</h3>
                 <p className={"w-[90%] text-md md:text-xl  text-gray-600 mt-3"}>{props.talkTitle}</p>
+                <div className={"flex flex-row gap-2 mt-3 text-sm"}>
+                    {props.pills.includes("Speaker") ? <span className={"text-sm px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full"}>Speaker</span> : null}
+                    {props.pills.includes("Panel") ? <span className={"text-sm px-3 py-1 bg-purple-100 text-purple-800 text-sm font-medium rounded-full"}>Careers in AI Panelist</span> : null}
+                    {props.pills.includes("Workshop") ? <span className={"text-sm px-3 py-1 bg-orange-100 text-orange-800 text-sm font-medium rounded-full"}>Workshop</span> : null}
+                </div>
             </div>
 
         </div>

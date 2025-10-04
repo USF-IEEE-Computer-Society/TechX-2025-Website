@@ -1,5 +1,3 @@
-import hero from "../assets/1097988940.webp"
-
 import SpeakerCard from "./SpeakerCard";
 
 import {speakers} from "./speakers";
@@ -26,6 +24,7 @@ export default function Highlights(){
                         talkTitle={s.talkTitle}
                         headshot={s.headshot}
                         linkedinLink={s.linkedinLink}
+                        pills={s.pills}
                     />
                 ))}
 

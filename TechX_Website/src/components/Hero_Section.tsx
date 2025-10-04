@@ -1,13 +1,18 @@
-import hero from "../assets/1097988940.webp"
-
 import RegistrationButtons from "./RegistrationButtons";
 
 
 export default function Hero_Section(){
 
     return (
-        <div className={"relative w-full h-[35rem] bg-stone-200"}> <div/>
-            <img src={hero} className={"w-full h-full"}/>
+        <div className={"relative w-full h-[35rem] bg-stone-200 overflow-hidden"}>
+            <video 
+                src="/src/assets/techx_video.webm"
+                className={"w-full h-full object-cover"} 
+                autoPlay 
+                muted 
+                loop 
+                playsInline
+            />
             <div className={"absolute top-0 opacity-65 w-full h-full bg-black z-1"} />
             <div className={"absolute top-20 md:top-45 flex flex-col justify-center items-center z-2 gap-4 w-full"}>
                 <h1 className={"text-white text-4xl md:text-5xl xl:text-6xl text-center"}> TechX Florida 2025 AI Conference </h1>
