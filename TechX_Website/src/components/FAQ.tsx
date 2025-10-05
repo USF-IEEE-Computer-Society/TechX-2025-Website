@@ -33,7 +33,7 @@ export default function FAQ(){
                 <>
 
                     <div key={Question.id}
-                         className={`flex flex-col border border-black h-[4rem] ${OpenMenus[Question.id] ? "rounded-t-xl" : "rounded-xl"}  w-[80%] bg-blue-100 hover:bg-blue-200 mt-[1rem] flex pl-[1rem]`}>
+                         className={`flex flex-col border border-black h-[4rem] ${OpenMenus[Question.id] ? "rounded-t-xl" : "rounded-xl"}  w-[80%] bg-white hover:bg-[#FFA300] mt-[1rem] flex pl-[1rem]`}>
 
                         <div className={"w-full h-[4rem] flex justify-between items-center"}>
 
@@ -49,7 +49,10 @@ export default function FAQ(){
                                     </svg>
 
                                 </div>
-                                {Question.Question}
+                                <div className={"text-left"}>
+                                 {Question.Question}
+                                </div>
+
                                 <div
                                     className={`hidden absolute w-[15px] h-[2px] ${OpenMenus[Question.id] ? " rotate-225" : ""} duration-300 ease-in-out bg-black`}/>
                                 <div

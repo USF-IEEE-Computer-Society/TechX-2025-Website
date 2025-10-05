@@ -6,6 +6,8 @@ import Highlights from "./components/Highlights";
 import Get_Tickets from "./components/Get_Tickets";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import Whatsapp from "./components/Whatsapp";
+import Organizers from "./components/Organizers";
 import Companies from "./components/Companies";
 
 
@@ -19,6 +21,8 @@ function App() {
         <WhyAttend/>
         <Highlights/>
         <Get_Tickets/>
+        <Whatsapp/>
+        <Organizers/>
         <FAQ/>
         <Footer/>
 

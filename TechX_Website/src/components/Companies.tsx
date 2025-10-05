@@ -1,4 +1,4 @@
-import logo2 from "../assets/ieee-cs-logo.webp"
+import logo2 from "../assets/logos/ieee-cs-logo.webp"
 
 
 
