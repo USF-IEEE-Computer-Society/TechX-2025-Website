@@ -1,12 +1,12 @@
 import RegistrationButtons from "./RegistrationButtons";
-
+import techxVideo from "../assets/techx_video.webm";
 
 export default function Hero_Section(){
 
     return (
         <div className={"relative w-full h-[35rem] bg-stone-200 overflow-hidden"}>
-            <video 
-                src="/src/assets/techx_video.webm"
+            <video
+                src={techxVideo}
                 className={"w-full h-full object-cover"} 
                 autoPlay 
                 muted 
