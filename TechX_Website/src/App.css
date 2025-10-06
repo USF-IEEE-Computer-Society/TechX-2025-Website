@@ -7,6 +7,12 @@ html, body {
     overflow-x: hidden;
 }
 
+a {
+    color: #00629B;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .Roboto{
     font-family: "Roboto Light", "Roboto Thin", serif;
 }

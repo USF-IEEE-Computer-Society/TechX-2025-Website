@@ -7,14 +7,14 @@ type Faq_Block = {
 };
 
 const Questions: Faq_Block[] = [
-    { id: 0, Question: "Who can attend TechX, and is there a registration fee?", Response: "TechX is open to all students, professionals, and tech enthusiasts interested in artificial intelligence and innovation. The conference is completely free to attend, but advance registration is required to reserve your spot." },
+    { id: 0, Question: "Who can attend TechX, and is there a registration fee?", Response: "TechX is open to all students, professionals, and tech enthusiasts interested in artificial intelligence and innovation. The conference is completely free to attend, but advance <a href='#Register'>registration</a> is required to reserve your spot." },
     { id: 1, Question: "What is the venue for the conference?", Response: "The conference will take place at 3820 USF Alumni Drive, Tampa, FL 33620." },
     { id: 2, Question: "When is it?", Response: "TechX 2025 will be held on November 8th, 2025, from 11:00 AM to 5:00 PM." },
-    { id: 3, Question: "Where can I find the list of speakers?", Response: "You can view the full list of speakers and the event schedule here." },
+    { id: 3, Question: "Where can I find the list of speakers?", Response: "You can view the full list of speakers <a href='#Events'>here</a> and the schedule <a href='/schedule'>here</a>." },
     { id: 4, Question: "How will I benefit from this conference?", Response: "TechX offers a valuable opportunity to learn from AI professionals from leading companies such as Intel, Microsoft, Jabil, Verizon, Atlassian, and Tampa Bay startups Attendees will gain insights into real-world AI applications, connect with industry experts, and expand their professional network through exclusive networking sessions and interactive discussions." },
     { id: 5, Question: "Will food or refreshments be provided?", Response: "Yes, complimentary lunch and refreshments will be available for all registered attendees." },
-    { id: 6, Question: "Is parking available at the venue?", Response: "Yes, parking will be available near the venue. Locations: Richard A.Beard Parking Facility, USF parking map." },
-    { id: 7, Question: "How can I get involved with TechX?", Response: "Companies and startups interested in tabling, sponsoring, or speaking can contact the organizing team at vs33@usf.edu. Students interested in volunteering can apply here(insert link**)." },
+    { id: 6, Question: "Is parking available at the venue?", Response: "Yes, parking will be available near the venue. Locations: <a href='https://share.google/1OlcDm3XVB1zLOmVy' target='_blank'>Richard A.Beard Parking Facility, USF parking map</a>." },
+    { id: 7, Question: "How can I get involved with TechX?", Response: "Companies and startups interested in tabling, sponsoring, or speaking can contact the organizing team at <a href='mailto:vs33@usf.edu'>vs33@usf.edu</a>. Students interested in volunteering can email too." },
     { id: 8, Question: "Will there be any recordings of the talks?", Response: "Yes, all keynote talks and selected breakout sessions will be recorded. The recordings will be made available to registered attendees after the event." },
 ];
 
@@ -81,8 +81,7 @@ export default function FAQ() {
                             >
                                 <div className="overflow-hidden">
                                     <div className="px-[1.5rem] py-[1.25rem]">
-                                        <p className="text-[1.0625rem] leading-[1.75rem] text-black/80">
-                                            {q.Response}
+                                        <p className="text-[1.0625rem] leading-[1.75rem] text-black/80" dangerouslySetInnerHTML={{ __html: q.Response }}>
                                         </p>
                                     </div>
                                 </div>

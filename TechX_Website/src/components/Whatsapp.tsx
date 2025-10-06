@@ -3,7 +3,7 @@ import gbm from "../assets/gbm.png"
 export default function Whatsapp(){
 
     return (
-        <div id={'Register'} className={"w-full h-auto bg-[#F5F5F5] flex flex-col items-center p-[2rem]"}>
+        <div id={'Whatsapp'} className={"w-full h-auto bg-[#F5F5F5] flex flex-col items-center p-[2rem]"}>
 
 
             <div className={"flex flex-col md:flex-row items-center"}>

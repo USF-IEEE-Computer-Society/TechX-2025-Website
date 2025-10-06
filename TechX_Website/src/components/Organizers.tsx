@@ -7,7 +7,7 @@ import ieee from "../assets/logos/ieee-logo.jpg"
 export default function Organizers(){
 
     return (
-        <div id={'Register'} className={"w-full h-auto bg-white flex flex-col items-center pb-[3rem] p-[1rem]"}>
+        <div id={'Organizers'} className={"w-full h-auto bg-white flex flex-col items-center pb-[3rem] p-[1rem]"}>
             <h2 className={"text-4xl tracking-tight font-bold pt-[2rem] mb-5"}> Organizers </h2>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
