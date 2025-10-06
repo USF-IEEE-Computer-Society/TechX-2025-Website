@@ -4,7 +4,7 @@ export default function Whatsapp(){
         <div id={'Register'} className={"w-full h-auto bg-[#F5F5F5] flex flex-col items-center pb-[2rem]"}>
             <h2 className={"text-4xl tracking-tight font-bold pt-[3rem] text-center"}>Join Whatsapp Community of TechX</h2>
 
-            <p className={"w-[80%] lg:w-[70%] text-lg text-center text-balance pt-[2rem] mb-8"}> Subheader
+            <p className={"w-[80%] lg:w-[70%] text-lg text-center text-balance pt-[1.5rem] mb-8"}> Subheader
 
             </p>
             <a className={"hover:scale-110 duration-300 ease-in-out cursor-pointer mt-2"}

@@ -10,23 +10,23 @@ export default function Organizers(){
         <div id={'Register'} className={"w-full h-auto bg-white flex flex-col items-center pb-[2rem] p-[1rem]"}>
             <h2 className={"text-4xl tracking-tight font-bold pt-[3rem]"}> Organizers </h2>
 
-            <p className={"w-[80%] lg:w-[70%] text-lg text-center text-balance pt-[2rem]"}> Subheader
+            <p className={"w-[80%] lg:w-[70%] text-lg text-center text-balance pt-[1.5rem] mb-8"}> Subheader
 
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
-                {/* верхний ряд */}
+                {/* upper deck */}
                 <img src={ieee} className="h-16 md:h-32"/>
                 <img src={ieeecs} className="h-16 md:h-32"/>
                 <img src={ieeecssyp} className="h-16 md:h-32"/>
 
-                {/* нижний ряд — только для мобилки */}
+                {/* lower deck - mobile */}
                 <img src={ieeecsfwcs} className="h-16 md:hidden"/>
                 <div className="col-span-2 flex justify-center md:hidden">
                     <img src={ieeecsusfwcs} className="h-16"/>
                 </div>
 
-                {/* нижний ряд — только для десктопа */}
+                {/* lower deck - desktop */}
                 <div className="hidden md:flex md:col-span-3 justify-center gap-10">
                     <img src={ieeecsfwcs} className="h-32"/>
                     <img src={ieeecsusfwcs} className="h-32"/>

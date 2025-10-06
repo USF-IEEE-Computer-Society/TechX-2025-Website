@@ -17,7 +17,7 @@ export default function SpeakerCard(props: SpeakerCardProps) {
 
             <div className={"shadow-2xl h-full pl-[1rem] pt-[2rem]"}>
                 <div className={"flex flex-col md:flex-row gap-2 md:items-center text-wrap break-words pr-[1rem]"}>
-                    <h2 className={"text-2xl font-bold"}>{props.name}</h2>
+                    <h2 className={"text-2xl font-bold w-fit"}>{props.name}</h2>
                     <a href={props.linkedinLink} target="_blank" rel="noopener noreferrer">
                         <img className={"h-6"} src={linkedin}/>
                     </a>

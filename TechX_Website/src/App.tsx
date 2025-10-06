@@ -1,32 +1,20 @@
 import './App.css'
-import WhyAttend from "./components/Attendance";
-import Hero_Section from "./components/Hero_Section";
-import Navbar from "./components/Navbar";
-import Highlights from "./components/Highlights";
-import Get_Tickets from "./components/Get_Tickets";
-import FAQ from "./components/FAQ";
-import Footer from "./components/Footer";
-import Whatsapp from "./components/Whatsapp";
-import Organizers from "./components/Organizers";
-import Companies from "./components/Companies";
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './components/Home'
+import Schedule from './components/Schedule'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
-
-
   return (
-    <>
-        <Navbar/>
-        <Hero_Section/>
-        <WhyAttend/>
-        <Highlights/>
-        <Get_Tickets/>
-        <Whatsapp/>
-        <Organizers/>
-        <FAQ/>
-        <Footer/>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/schedule" element={<Schedule />} />
+      </Routes>
 
-    </>
+    </Router>
   )
 }
 
