@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* Prevent horizontal scrollbar */
 html, body {
     margin: 0;
     padding: 0;
@@ -22,7 +21,7 @@ a {
         @apply w-[75px] h-[75px] md:w-[100px] md:h-[100px] rounded-full bg-[#FFA300] flex justify-center items-center mb-3;
     }
     .WhyAttendIcons {
-        @apply w-[25px] h-[25px] md:w-[50px] md:h-[50px];
+        @apply w-[35px] h-[35px] md:w-[50px] md:h-[50px];
     }
 }
 
