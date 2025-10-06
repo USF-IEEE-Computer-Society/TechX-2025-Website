@@ -7,11 +7,15 @@ type Faq_Block = {
 };
 
 const Questions: Faq_Block[] = [
-    { id: 0, Question: "Will there be any available parking for visitors?", Response: "Yes! Visitor parking will be available on campus near the main venue. Please follow the posted signs or check our website for a parking map." },
-    { id: 1, Question: "What time does the event start?", Response: "Mark your calendars for November 8. The event kicks off at 11:00 AM with registration and check-in and ends at 5:00 PM." },
-    { id: 2, Question: "Where is the event happening?", Response: "TechX will take place at the University of South Florida’s Engineering 2 building." },
-    { id: 3, Question: "Where can I see the full TechX schedule?", Response: "You can find the full schedule on our official website at techxflorida.com/schedule, or through the event app." },
-    { id: 4, Question: "Will there be any recordings of the talks?", Response: "Yes, all keynote talks and selected breakout sessions will be recorded. The recordings will be made available to registered attendees after the event." },
+    { id: 0, Question: "Who can attend TechX, and is there a registration fee?", Response: "TechX is open to all students, professionals, and tech enthusiasts interested in artificial intelligence and innovation. The conference is completely free to attend, but advance registration is required to reserve your spot." },
+    { id: 1, Question: "What is the venue for the conference?", Response: "The conference will take place at 3820 USF Alumni Drive, Tampa, FL 33620." },
+    { id: 2, Question: "When is it?", Response: "TechX 2025 will be held on November 8th, 2025, from 11:00 AM to 5:00 PM." },
+    { id: 3, Question: "Where can I find the list of speakers?", Response: "You can view the full list of speakers and the event schedule here." },
+    { id: 4, Question: "How will I benefit from this conference?", Response: "TechX offers a valuable opportunity to learn from AI professionals from leading companies such as Intel, Microsoft, Jabil, Verizon, Atlassian, and Tampa Bay startups Attendees will gain insights into real-world AI applications, connect with industry experts, and expand their professional network through exclusive networking sessions and interactive discussions." },
+    { id: 5, Question: "Will food or refreshments be provided?", Response: "Yes, complimentary lunch and refreshments will be available for all registered attendees." },
+    { id: 6, Question: "Is parking available at the venue?", Response: "Yes, parking will be available near the venue. Locations: Richard A.Beard Parking Facility, USF parking map." },
+    { id: 7, Question: "How can I get involved with TechX?", Response: "Companies and startups interested in tabling, sponsoring, or speaking can contact the organizing team at vs33@usf.edu. Students interested in volunteering can apply here(insert link**)." },
+    { id: 8, Question: "Will there be any recordings of the talks?", Response: "Yes, all keynote talks and selected breakout sessions will be recorded. The recordings will be made available to registered attendees after the event." },
 ];
 
 export default function FAQ() {
@@ -33,12 +37,12 @@ export default function FAQ() {
                 Frequently Asked Questions
             </h1>
 
-            <div className="w-full flex flex-col items-center gap-[1rem]">
+            <div className="w-[90%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-[1rem]">
                 {Questions.map((q) => {
                     const open = OpenMenus[q.id];
 
                     return (
-                        <div key={q.id} className="w-[80%]">
+                        <div key={q.id} className="w-full">
                             {/* Header */}
                             <div
                                 className={[

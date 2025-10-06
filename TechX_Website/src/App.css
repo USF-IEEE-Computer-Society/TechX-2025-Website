@@ -10,3 +10,16 @@ html, body {
 .Roboto{
     font-family: "Roboto Light", "Roboto Thin", serif;
 }
+
+@layer utilities {
+    .WhyAttendIconsDiv {
+        @apply w-[75px] h-[75px] md:w-[100px] md:h-[100px] rounded-full bg-[#FFA300] flex justify-center items-center mb-3;
+    }
+    .WhyAttendIcons {
+        @apply w-[25px] h-[25px] md:w-[50px] md:h-[50px];
+    }
+}
+
+
+
+
