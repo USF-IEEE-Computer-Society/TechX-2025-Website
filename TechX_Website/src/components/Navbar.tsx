@@ -14,12 +14,24 @@ export default function Navbar(){
             <nav className="w-full flex flex-col-reverse md:flex-row items-center justify-between md:px-30 py-5 bg-white shadow gap-7">
 
                 <div className="flex items-center gap-6 text-2xl underline decoration-1 font-bold">
-                    <a href="#home" className="text-gray-800 hover:text-black font-medium">
-                        Home
+
+
+                    <a className={"hover:scale-105 duration-300 ease-in-out cursor-pointer mt-2"}
+                       href="/" target="_blank" rel="noopener noreferrer">
+                        <button
+                            className={"w-[8rem] h-[3rem] bg-white border-2 border-[#FFA300] rounded cursor-pointer"}>
+                            <h2 className={"text-base font-bold text-black text-balance text-center"}>Home</h2>
+                        </button>
                     </a>
-                    <a href="schedule" className="text-gray-800 hover:text-black font-medium">
-                        Schedule
+
+                    <a className={"hover:scale-105 duration-300 ease-in-out cursor-pointer mt-2"}
+                       href="/schedule" target="_blank" rel="noopener noreferrer">
+                        <button
+                            className={"w-[8rem] h-[3rem] bg-white border-2 border-[#FFA300] rounded cursor-pointer"}>
+                            <h2 className={"text-base font-bold text-black text-balance text-center"}>Schedule</h2>
+                        </button>
                     </a>
+
                 </div>
 
 
