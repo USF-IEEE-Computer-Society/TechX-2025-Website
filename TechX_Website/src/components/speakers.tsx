@@ -45,7 +45,7 @@ export const speakers = [
     {
         name: "Yasmine Gardiner",
         company: "DataScrubber.AI",
-        talkTitle: "Vibe coding rework in progress",
+        talkTitle: "Vibe coding workshop",
         headshot: yasmineImg,
         linkedinLink: "https://www.linkedin.com/in/yasmine-gardiner-0b0720100/",
         pills:["Workshop"]

@@ -1,5 +1,4 @@
 import IMG_0016 from "../assets/new_techx2024/IMG_0016.jpg"
-import IMG_0023 from "../assets/new_techx2024/IMG_0023.jpg"
 import IMG_0063 from "../assets/new_techx2024/IMG_0063.jpg"
 import IMG_0113 from "../assets/new_techx2024/IMG_0113.jpg"
 import IMG_0218 from "../assets/new_techx2024/IMG_0218.jpg"
