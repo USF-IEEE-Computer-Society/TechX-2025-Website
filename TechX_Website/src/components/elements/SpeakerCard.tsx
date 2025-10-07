@@ -31,7 +31,7 @@ export default function SpeakerCard(props: SpeakerCardProps) {
 
                 <div className={"absolute bottom-[1rem] right-[1rem]"}>
                     <a href={props.linkedinLink} target="_blank" rel="noopener noreferrer">
-                        <img className={"h-6"} src={linkedin}/>
+                        <img className={"h-8"} src={linkedin}/>
                     </a>
                 </div>
 
