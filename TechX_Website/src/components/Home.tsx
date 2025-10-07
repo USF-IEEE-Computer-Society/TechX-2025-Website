@@ -1,14 +1,14 @@
-import WhyAttend from "./Attendance";
-import Hero_Section from "./Hero_Section";
-import Navbar from "./Navbar";
-import Highlights from "./Highlights";
-import Get_Tickets from "./Get_Tickets";
-import FAQ from "./FAQ";
-import Footer from "./Footer";
-import Whatsapp from "./Whatsapp";
-import Organizers from "./Organizers";
-import Companies from "./Companies";
-import Photos from "./Photos";
+import WhyAttend from "./sections/Attendance";
+import Hero_Section from "./sections/Hero_Section";
+import Navbar from "./sections/Navbar";
+import Highlights from "./sections/Highlights";
+import Get_Tickets from "./sections/Get_Tickets";
+import FAQ from "./sections/FAQ";
+import Footer from "./sections/Footer";
+import Whatsapp from "./sections/Whatsapp";
+import Organizers from "./sections/Organizers";
+import Companies from "./sections/Companies";
+import Photos from "./sections/Photos";
 
 function Home() {
   return (

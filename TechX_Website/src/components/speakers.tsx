@@ -8,6 +8,8 @@ import joeImg from "../assets/speakers/joe.png";
 import antraImg from "../assets/speakers/antra.png";
 import subhajitImg from "../assets/speakers/subhajit.png";
 import lenarImg from "../assets/speakers/lenar.png";
+import sutapimg from "../assets/speakers/sutap.jpg";
+import sutapimg2 from "../assets/speakers/sutap2.png";
 
 export const speakers = [
     {
@@ -95,6 +97,13 @@ const stash =[
         headshot: reginaldImg,
         linkedinLink: "https://www.linkedin.com/in/dominic-patruno-04109456/",
         pills:["Speaker", "IEEECS"]
+    },    {
+        name: "Sutap Chatterjee",
+        company: "Verizon",
+        talkTitle: "",
+        headshot: sutapimg2,
+        linkedinLink: "https://www.linkedin.com/in/lenarm/",
+        pills:["Speaker"]
     }
 
 ]
