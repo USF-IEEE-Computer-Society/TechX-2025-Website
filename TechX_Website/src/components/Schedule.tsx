@@ -9,7 +9,7 @@ import Whatsapp from "./sections/Whatsapp";
 import Organizers from "./sections/Organizers";
 import Companies from "./sections/Companies";
 
-function Home() {
+function Schedule() {
     return (
         <div id={'Register'} className={"w-full h-auto bg-white flex flex-col items-center pb-[2rem]"}>
             <h2 className={"text-4xl tracking-tight font-bold pt-[3rem] text-center"}>Schedule TechX Florida 2025</h2>
@@ -19,4 +19,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Schedule
