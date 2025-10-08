@@ -16,6 +16,7 @@ const Questions: Faq_Block[] = [
     { id: 6, Question: "Is parking available at the venue?", Response: "Yes, parking will be available near the venue. Locations: <a href='https://share.google/1OlcDm3XVB1zLOmVy' target='_blank'>Richard A.Beard Parking Facility, USF parking map</a>." },
     { id: 7, Question: "How can I get involved with TechX?", Response: "Companies and startups interested in tabling, sponsoring, or speaking can contact the organizing team at <a href='mailto:vs33@usf.edu'>vs33@usf.edu</a>. Students interested in volunteering can email too." },
     { id: 8, Question: "Will there be any recordings of the talks?", Response: "Yes, all keynote talks and selected breakout sessions will be recorded. The recordings will be made available to registered attendees after the event." },
+    { id: 9, Question: "Is there a dress code for attendees?", Response: "While there’s no strict dress code, we encourage attendees to dress in smart casual or business casual attire—especially since several companies will be tabling and networking opportunities will be available. Think of something comfortable yet professional." },
 ];
 
 export default function FAQ() {
