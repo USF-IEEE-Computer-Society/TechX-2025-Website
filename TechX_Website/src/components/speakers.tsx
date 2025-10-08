@@ -8,9 +8,9 @@ import joeImg from "../assets/speakers/joe.png";
 import antraImg from "../assets/speakers/antra.png";
 import subhajitImg from "../assets/speakers/subhajit.png";
 import lenarImg from "../assets/speakers/lenar.png";
-import sutapimg from "../assets/speakers/sutap.jpg";
-import sutapimg2 from "../assets/speakers/sutap2.png";
+import sutapimg from "../assets/speakers/sutap.png";
 import michael from "../assets/speakers/michael.png";
+
 
 export const speakers = [
     {
@@ -84,7 +84,8 @@ export const speakers = [
         headshot: michael,
         linkedinLink: "https://www.linkedin.com/in/michaelviron/",
         pills:["PanelModerator"]
-    },
+    }
+
 
 ];
 
@@ -111,10 +112,11 @@ const stash =[
         name: "Sutap Chatterjee",
         company: "Verizon",
         talkTitle: "",
-        headshot: sutapimg2,
-        linkedinLink: "https://www.linkedin.com/in/lenarm/",
+        headshot: sutapimg,
+        linkedinLink: "https://www.linkedin.com/in/sutapchatterjee/",
         pills:["Speaker"]
     },
+
 
 
 ]

@@ -8,7 +8,7 @@ import IMG_0287 from "../../assets/techx2024/IMG_0287.jpg"
 export default function Photos(){
 
     return (
-        <div id={'Photos'} className={"w-full h-auto bg-[#F5F5F5] flex flex-col items-center pb-[3rem] p-[1rem]"}>
+        <div id={'Photos'} className={"w-full h-auto bg-white flex flex-col items-center pb-[3rem] p-[1rem]"}>
             <h2 className={"text-4xl tracking-tight font-bold pt-[3rem]"}> TechX Florida 2024 </h2>
 
             <p className={"w-[80%] lg:w-[70%] text-lg text-center text-balance pt-[2rem] mb-8"}>  See how it was last year

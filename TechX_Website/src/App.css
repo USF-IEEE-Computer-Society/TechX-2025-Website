@@ -25,7 +25,7 @@ a {
     }
 
     .Pill {
-        @apply text-sm inline-flex self-start w-fit px-3 py-1 font-medium rounded-2xl md:rounded-full
+        @apply inline-flex self-start w-fit px-3 py-1 font-medium rounded-2xl md:rounded-full
     }
 }
 

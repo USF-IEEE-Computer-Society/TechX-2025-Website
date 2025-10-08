@@ -6,9 +6,10 @@ import Get_Tickets from "./sections/Get_Tickets";
 import FAQ from "./sections/FAQ";
 import Footer from "./sections/Footer";
 import Whatsapp from "./sections/Whatsapp";
-import Organizers from "./sections/Organizers";
+import IEEE from "./sections/IEEE";
 import Companies from "./sections/Companies";
 import Photos from "./sections/Photos";
+import Team from "./sections/Team";
 
 function Home() {
   return (
@@ -19,7 +20,8 @@ function Home() {
       <Highlights/>
       <Get_Tickets/>
       <Whatsapp/>
-      <Organizers/>
+      <IEEE/>
+        <Team/>
         <Photos/>
       <FAQ/>
       <Footer/>

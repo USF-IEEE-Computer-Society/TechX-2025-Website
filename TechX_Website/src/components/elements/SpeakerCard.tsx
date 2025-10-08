@@ -21,7 +21,8 @@ export default function SpeakerCard(props: SpeakerCardProps) {
 
 
                 <h3 className={"text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight font-bold break-words"}>{props.company}</h3>
-                <p className={"w-[90%] text-md md:text-xl  text-gray-600 mt-3"}>{props.talkTitle}</p>
+
+                <p className={"w-[90%] text-md md:text-xl text-gray-600 mt-3"}>{props.talkTitle}</p>
 
 
                     <div className={"flex flex-col md:flex-row gap-2 mt-3 mb-7 text-sm pr-[1rem]"}>

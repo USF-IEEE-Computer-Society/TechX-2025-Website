@@ -33,7 +33,7 @@ export default function FAQ() {
     };
 
     return (
-        <div id="FAQ" className="w-full h-auto pb-[1rem] bg-[#FFFEFE] flex flex-col items-center mb-[1.75rem]">
+        <div id="FAQ" className="w-full h-auto pb-[1rem] bg-[#F5F5F5] flex flex-col items-center mb-[1.75rem]">
             <h1 className="text-[1.5rem] md:text-[2rem] tracking-tight font-bold pt-[2rem] mb-[1.25rem]">
                 Frequently Asked Questions
             </h1>

@@ -6,7 +6,7 @@ import Get_Tickets from "./sections/Get_Tickets";
 import FAQ from "./sections/FAQ";
 import Footer from "./sections/Footer";
 import Whatsapp from "./sections/Whatsapp";
-import Organizers from "./sections/Organizers";
+import Organizers from "./sections/IEEE";
 import Companies from "./sections/Companies";
 
 function Schedule() {
