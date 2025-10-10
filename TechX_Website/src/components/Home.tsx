@@ -24,7 +24,6 @@ function Home() {
         <Team/>
         <Photos/>
       <FAQ/>
-      <Footer/>
     </>
   )
 }
