@@ -1,6 +1,6 @@
 import SpeakerCard from "../elements/SpeakerCard";
 
-import {speakers} from "../speakers";
+import {speakersData} from "../../data/speakersData";
 
 export default function Highlights(){
 
@@ -16,7 +16,7 @@ export default function Highlights(){
             <div
                 className={"w-full h-full mt-4 gap-[1rem] pb-[1rem] justify-items-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 p-[1rem] lg:p-[4rem]"}>
 
-                {speakers.map((s, i) => (
+                {speakersData.map((s, i) => (
                     <SpeakerCard
                         key={i}
                         name={s.name}

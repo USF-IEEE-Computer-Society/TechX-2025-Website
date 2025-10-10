@@ -12,7 +12,7 @@ import sutapimg from "../assets/speakers/sutap.png";
 import michael from "../assets/speakers/michael.png";
 
 
-export const speakers = [
+export const speakersData = [
     {
         name: "Reginald Davis",
         company: "Microsoft",
@@ -121,4 +121,4 @@ const stash =[
 
 ]
 
-export default speakers;
+export default speakersData;

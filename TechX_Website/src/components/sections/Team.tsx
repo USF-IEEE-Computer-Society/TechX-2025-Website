@@ -1,6 +1,6 @@
 import TeamCard from "../elements/TeamCard";
 
-import {team} from "../../team";
+import {teamData} from "../../data/teamData";
 
 export default function Team(){
 
@@ -15,7 +15,7 @@ export default function Team(){
             <div
                 className={"w-full h-full mt-4 gap-[1rem] pb-[1rem] justify-items-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 p-[1rem] lg:p-[4rem]"}>
 
-                {team.map((s, i) => (
+                {teamData.map((s, i) => (
                     <TeamCard
                         key={i}
                         name={s.name}

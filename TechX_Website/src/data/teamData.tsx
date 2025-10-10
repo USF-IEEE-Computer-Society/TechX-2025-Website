@@ -1,21 +1,21 @@
-import anzhelikaimg from "./assets/team/anzhelika.jpeg";
-import bernardoimg from "./assets/team/bernardo.jpeg";
-import caioimg from "./assets/team/caiojpeg.jpeg";
-import cesarimg from "./assets/team/cesarjpeg.jpeg";
-import egorimg from "./assets/team/egor.jpeg";
-import elanimg from "./assets/team/elanjpeg.jpeg";
-import ericimg from "./assets/team/eric.jpeg";
-import kimberlyimg from "./assets/team/kimberly.jpeg";
-import leonardoimg from "./assets/team/leonardo.jpeg";
-import saraimg from "./assets/team/sara.jpeg";
-import sofiaimg from "./assets/team/sofia.jpeg";
-import vamaimg from "./assets/team/vama.jpeg";
-import zarinaimg from "./assets/team/zarina.jpg";
-import amberimg from "./assets/team/amber.jpeg";
-import noImage from "./assets/team/noImage.jpg";
-import rodrigoimg from "./assets/team/rodrigo.jpeg";
+import anzhelikaimg from "../assets/team/anzhelika.jpeg";
+import bernardoimg from "../assets/team/bernardo.jpeg";
+import caioimg from "../assets/team/caiojpeg.jpeg";
+import cesarimg from "../assets/team/cesarjpeg.jpeg";
+import egorimg from "../assets/team/egor.jpeg";
+import elanimg from "../assets/team/elanjpeg.jpeg";
+import ericimg from "../assets/team/eric.jpeg";
+import kimberlyimg from "../assets/team/kimberly.jpeg";
+import leonardoimg from "../assets/team/leonardo.jpeg";
+import saraimg from "../assets/team/sara.jpeg";
+import sofiaimg from "../assets/team/sofia.jpeg";
+import vamaimg from "../assets/team/vama.jpeg";
+import zarinaimg from "../assets/team/zarina.jpg";
+import amberimg from "../assets/team/amber.jpeg";
+import noImage from "../assets/team/noImage.jpg";
+import rodrigoimg from "../assets/team/rodrigo.jpeg";
 
-export const team = [
+export const teamData = [
     {
         name: "Anzhelika Kurnikova",
         major: "Computer Science",
@@ -138,4 +138,4 @@ export const team = [
     }
 ];
 
-export default team;
+export default teamData;

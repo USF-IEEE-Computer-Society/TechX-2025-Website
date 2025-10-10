@@ -14,7 +14,7 @@ export default function Photos(){
             <p className={"w-[80%] lg:w-[70%] text-lg text-center text-balance pt-[2rem] mb-8"}>  See how it was last year
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center [&>img]:md:h-75 [&>img]:h-57 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center [&>img]:md:h-75 [&>img]:h-57 ">
 
                 <img src={IMG_0251} alt="Photo 5"/>
                 <img src={IMG_0016} alt="Photo 1"/>
