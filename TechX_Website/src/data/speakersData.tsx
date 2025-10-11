@@ -10,6 +10,7 @@ import subhajitImg from "../assets/speakers/subhajit.png";
 import lenarImg from "../assets/speakers/lenar.png";
 import sutapimg from "../assets/speakers/sutap.png";
 import michael from "../assets/speakers/michael.png";
+import mrunalimg from "../assets/speakers/mrunal.png";
 
 
 export const speakersData = [
@@ -84,9 +85,15 @@ export const speakersData = [
         headshot: michael,
         linkedinLink: "https://www.linkedin.com/in/michaelviron/",
         pills:["PanelModerator"]
+    },
+    {
+        name: "Mrunal Gangrade",
+        company: "JPMorgan Chase",
+        talkTitle: "Bridging the Gap Between Black Box Models and Business Risk: Explainable AI in Regulated Industries",
+        headshot: mrunalimg,
+        linkedinLink: "https://www.linkedin.com/in/mrunal-gangrade-8087121b5/",
+        pills:["Speaker"]
     }
-
-
 ];
 
 const stash =[
@@ -98,14 +105,6 @@ const stash =[
         talkTitle: "WIP",
         headshot: antraImg,
         linkedinLink: "https://www.linkedin.com/in/antra-malhotra-455b608/",
-        pills:["Speaker", "IEEECS"]
-    },
-    {
-        name: "Dominic Patruno",
-        company: "Jabil",
-        talkTitle: "???",
-        headshot: reginaldImg,
-        linkedinLink: "https://www.linkedin.com/in/dominic-patruno-04109456/",
         pills:["Speaker", "IEEECS"]
     },
     {

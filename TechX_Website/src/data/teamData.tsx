@@ -3,7 +3,7 @@ import bernardoimg from "../assets/team/bernardo.jpeg";
 import caioimg from "../assets/team/caiojpeg.jpeg";
 import cesarimg from "../assets/team/cesarjpeg.jpeg";
 import egorimg from "../assets/team/egor.jpeg";
-import elanimg from "../assets/team/elanjpeg.jpeg";
+import elanimg from "../assets/team/elan.png";
 import ericimg from "../assets/team/eric.jpeg";
 import kimberlyimg from "../assets/team/kimberly.jpeg";
 import leonardoimg from "../assets/team/leonardo.jpeg";
