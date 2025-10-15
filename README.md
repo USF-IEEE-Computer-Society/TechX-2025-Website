@@ -1,7 +1,9 @@
-This repository contains the official website for **TechX Florida 2025**
+## TechX Florida 2025 — Website
 
-TechX Florida 2025 is a free conference about AI at University of South Florida happening on November 8th, 2025 and open to students and professionals
+Live site: <a href="techxflorida" target="blank">techxflorida.com</a>
 
-Link to live website: https://techxflorida.com
+Event: November 8, 2025 · University of South Florida · Tampa, FL
 
-![Flyer_TechX (1560x760).jpeg](TechX_Website/src/Flyer_TechX%20%281560x760%29.jpeg)
+Official website for the TechX Florida AI conference. Built with React + TypeScript + Vite and deployed to GitHub Pages.
+
+![cover.jpeg](TechX_Website/src/assets/cover.jpeg)

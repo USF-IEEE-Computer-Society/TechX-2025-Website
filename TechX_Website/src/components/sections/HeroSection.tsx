@@ -3,7 +3,7 @@ import techxVideo from "../../assets/techx_video.webm";
 import techxVideoCompressedHeavy from "../../assets/techx_video_compressed_heavy.webm";
 import techxVideoCompressedLight from "../../assets/techx_video_compressed_light.webm";
 
-export default function Hero_Section(){
+export default function HeroSection(){
 
     return (
         <div className={"relative w-full h-[35rem] md:h-[38rem] bg-stone-200 overflow-hidden"}>

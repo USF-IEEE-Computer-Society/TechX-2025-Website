@@ -1,6 +1,6 @@
 import linkedin from "../../assets/logos/LinkedIn_icon.svg.png";
 
-interface SpeakerCardProps {
+interface TeamCardProps {
     name: string;
     major: string;
     headshot: string;
@@ -29,7 +29,7 @@ function getPillColor(pill: string): string {
     }
 }
 
-export default function SpeakerCard(props: SpeakerCardProps) {
+export default function TeamCard(props: TeamCardProps) {
     const mobileHeightClass = props.index < 4 ? "h-[525px]" : "h-[460px]";
     const mdHeightClass = props.index < 6 ? "md:h-[550px]" : "md:h-[490px]";
     const lgHeightClass = props.index < 5 ? "lg:h-[575px]" : "lg:h-[525px]";

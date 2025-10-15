@@ -1,15 +1,5 @@
-import WhyAttend from "./sections/Attendance";
-import Hero_Section from "./sections/Hero_Section";
-import Navbar from "./sections/Navbar";
-import Highlights from "./sections/Highlights";
-import Get_Tickets from "./sections/Get_Tickets";
-import FAQ from "./sections/FAQ";
-import Footer from "./sections/Footer";
-import Whatsapp from "./sections/Whatsapp";
-import Organizers from "./sections/IEEE";
-import Companies from "./sections/Companies";
-import TypeBadge from "./elements/TypeBadge";
 import { scheduleData } from "../data/scheduleData";
+import TypeBadge from "./elements/TypeBadge";
 
 function Schedule() {
 

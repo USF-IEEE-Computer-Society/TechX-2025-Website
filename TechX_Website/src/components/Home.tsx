@@ -1,8 +1,8 @@
 import WhyAttend from "./sections/Attendance";
-import Hero_Section from "./sections/Hero_Section";
+import HeroSection from "./sections/HeroSection";
 import Navbar from "./sections/Navbar";
 import Highlights from "./sections/Highlights";
-import Get_Tickets from "./sections/Get_Tickets";
+import GetTickets from "./sections/GetTickets";
 import FAQ from "./sections/FAQ";
 import Footer from "./sections/Footer";
 import Whatsapp from "./sections/Whatsapp";
@@ -15,10 +15,10 @@ function Home() {
   return (
     <>
       
-      <Hero_Section/>
+      <HeroSection/>
       <WhyAttend/>
       <Highlights/>
-      <Get_Tickets/>
+      <GetTickets/>
       <Whatsapp/>
       <IEEE/>
         <Companies/>

@@ -1,6 +1,6 @@
 import {Users, MicVocal, Check} from "lucide-react";
 
-import FadeInSection from "../elements/FadeInSection";
+import FadeInSection from "../animations/FadeInSection";
 
 
 

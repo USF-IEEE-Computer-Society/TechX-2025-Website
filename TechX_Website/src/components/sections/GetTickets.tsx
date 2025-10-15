@@ -1,6 +1,6 @@
 import RegistrationButtons from "../elements/RegistrationButtons";
 
-export default function Get_Tickets(){
+export default function GetTickets(){
 
     return (
         <div id={'Register'} className={"w-full h-auto bg-[#00629B] flex flex-col items-center pb-[2rem]"}>

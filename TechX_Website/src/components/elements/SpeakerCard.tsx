@@ -13,7 +13,7 @@ export default function SpeakerCard(props: SpeakerCardProps) {
     return (
         <div className={"w-[100%] h-[575px] md:h-[600px] flex flex-col rounded-xl mb-5"}>
 
-            <img className={"object-fit"} src={props.headshot} />
+            <img className={"object-fit"} src={props.headshot} alt={`${props.name} headshot`}/>
 
             <div className={"shadow-2xl relative h-full pl-[1rem] pt-[1.5rem] pr-[1rem]"}>
 
@@ -45,7 +45,7 @@ export default function SpeakerCard(props: SpeakerCardProps) {
 
                 <div className={"absolute bottom-[1rem] right-[1rem]"}>
                     <a href={props.linkedinLink} target="_blank" rel="noopener noreferrer">
-                        <img className={"h-8"} src={linkedin}/>
+                        <img className={"h-8"} src={linkedin} alt="Linkedin Icon"/>
                     </a>
                 </div>
 

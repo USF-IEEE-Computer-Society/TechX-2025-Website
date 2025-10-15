@@ -1,4 +1,3 @@
-// Import speaker images
 import reginaldImg from "../assets/speakers/reginald.png";
 import raghuvanImg from "../assets/speakers/raghuvan.png";
 import mrinalImg from "../assets/speakers/mrinal.png";
@@ -111,14 +110,5 @@ export const speakersData = [
         pills:["Speaker"]
     },
 ];
-
-const stash =[
-
-
-
-
-
-
-]
 
 export default speakersData;
