@@ -39,6 +39,22 @@ export const speakersData = [
         pills:["Speaker", "Panel", "IEEECS"]
     },
     {
+        name: "Subhajit Paul",
+        company: "Jabil",
+        talkTitle: "AI application in ERP: Effective Mobile Material Placement in Warehouse using AI/ML",
+        headshot: subhajitImg,
+        linkedinLink: "https://www.linkedin.com/in/subhajit-paul-4a79a78/",
+        pills:["Speaker", "IEEECS"]
+    },
+    {
+        name: "Mrunal Gangrade",
+        company: "JPMorgan Chase",
+        talkTitle: "Bridging the Gap Between Black Box Models and Business Risk: Explainable AI in Regulated Industries",
+        headshot: mrunalimg,
+        linkedinLink: "https://www.linkedin.com/in/mrunal-gangrade-8087121b5/",
+        pills:["Speaker"]
+    },
+    {
         name: "Anna Bakhvalova",
         company: "Career Pathway Institute",
         talkTitle: "AI's Impact on Marketing: Trends and Anti-trends",
@@ -63,14 +79,6 @@ export const speakersData = [
         pills:["Speaker"]
     },
     {
-        name: "Subhajit Paul",
-        company: "Jabil",
-        talkTitle: "AI application in ERP: Effective Mobile Material Placement in Warehouse using AI/ML",
-        headshot: subhajitImg,
-        linkedinLink: "https://www.linkedin.com/in/subhajit-paul-4a79a78/",
-        pills:["Speaker", "IEEECS"]
-    },
-    {
         name: "Lenar Mukhamadiev",
         company: "Idelsoft",
         talkTitle: "",
@@ -87,22 +95,9 @@ export const speakersData = [
         pills:["PanelModerator"]
     },
     {
-        name: "Mrunal Gangrade",
-        company: "JPMorgan Chase",
-        talkTitle: "Bridging the Gap Between Black Box Models and Business Risk: Explainable AI in Regulated Industries",
-        headshot: mrunalimg,
-        linkedinLink: "https://www.linkedin.com/in/mrunal-gangrade-8087121b5/",
-        pills:["Speaker"]
-    }
-];
-
-const stash =[
-
-
-    {
         name: "Antra Malhotra",
         company: "Verizon",
-        talkTitle: "WIP",
+        talkTitle: "TBA",
         headshot: antraImg,
         linkedinLink: "https://www.linkedin.com/in/antra-malhotra-455b608/",
         pills:["Speaker", "IEEECS"]
@@ -110,11 +105,17 @@ const stash =[
     {
         name: "Sutap Chatterjee",
         company: "Verizon",
-        talkTitle: "",
+        talkTitle: "TBA",
         headshot: sutapimg,
         linkedinLink: "https://www.linkedin.com/in/sutapchatterjee/",
         pills:["Speaker"]
     },
+];
+
+const stash =[
+
+
+
 
 
 

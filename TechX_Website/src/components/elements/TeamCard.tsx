@@ -7,6 +7,7 @@ interface SpeakerCardProps {
     linkedinLink: string;
     year: string;
     pills: string[];
+    index: number;
 }
 
 function getPillColor(pill: string): string {
@@ -29,8 +30,12 @@ function getPillColor(pill: string): string {
 }
 
 export default function SpeakerCard(props: SpeakerCardProps) {
+    const mobileHeightClass = props.index < 4 ? "h-[525px]" : "h-[460px]";
+    const mdHeightClass = props.index < 6 ? "md:h-[550px]" : "md:h-[490px]";
+    const lgHeightClass = props.index < 5 ? "lg:h-[575px]" : "lg:h-[525px]";
+    
     return (
-        <div className={"w-[100%] h-[525px] md:h-[575px] flex flex-col rounded-xl mb-5"}>
+        <div className={`w-[100%] ${mobileHeightClass} ${mdHeightClass} ${lgHeightClass} flex flex-col rounded-xl mb-5`}>
 
             <img className={"object-fit"} src={props.headshot} />
 

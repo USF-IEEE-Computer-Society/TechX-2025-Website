@@ -14,13 +14,12 @@ export default function IEEE(){
                 <p className={"w-[90%] text-md md:text-2xl text-ellipsis text-gray-600 text-center text-pretty"}> The world’s largest technical professional organization </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 place-items-center">
-                {/* upper deck */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-7 place-items-center">
+
                 <img src={ieee} className="h-16 md:h-32"/>
                 <img src={ieeelife} className="h-16 md:h-32"/>
                 <img src={ieeecs} className="h-16 md:h-32"/>
                 <img src={ieeecssyp} className="h-16 md:h-32"/>
-
                 <img src={ieeecsfwcs} className="h-16 md:h-32"/>
                 <img src={ieeecsusfwcs} className="h-16 md:h-32"/>
 

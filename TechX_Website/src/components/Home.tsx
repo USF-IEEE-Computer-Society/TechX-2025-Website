@@ -21,6 +21,7 @@ function Home() {
       <Get_Tickets/>
       <Whatsapp/>
       <IEEE/>
+        <Companies/>
         <Team/>
         <Photos/>
       <FAQ/>

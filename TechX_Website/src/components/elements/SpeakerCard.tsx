@@ -17,10 +17,10 @@ export default function SpeakerCard(props: SpeakerCardProps) {
 
             <div className={"shadow-2xl relative h-full pl-[1rem] pt-[1.5rem] pr-[1rem]"}>
 
-                <h2 className={"text-2xl font-bold break-words"}>{props.name}</h2>
+                <h2 className={"text-2xl font-bold mb-1 break-words"}>{props.name}</h2>
 
 
-                <h3 className={"text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight font-bold break-words"}>{props.company}</h3>
+                <h3 className={"text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight font-semibold break-words"}>{props.company}</h3>
 
                 <p className={"w-[90%] text-md md:text-xl text-gray-600 mt-3"}>{props.talkTitle}</p>
 

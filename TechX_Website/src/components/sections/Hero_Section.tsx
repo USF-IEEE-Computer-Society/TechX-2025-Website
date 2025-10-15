@@ -8,7 +8,7 @@ export default function Hero_Section(){
     return (
         <div className={"relative w-full h-[35rem] md:h-[38rem] bg-stone-200 overflow-hidden"}>
             <video
-                src={techxVideoCompressedLight}
+                src={techxVideo}
                 className={"w-full h-full object-cover"} 
                 autoPlay 
                 muted 
