@@ -1,12 +1,9 @@
 import logo from "../../assets/logos/logoTechX.webp"
-import logo2 from "../../assets/logos/ieee-cs-logo.webp"
 import ieeecsusf from "../../assets/logos/ieee-cs-usf-orange.png"
 import {useState} from "react";
-import {Brain, BrainCircuit, Cog, CircuitBoard, Atom} from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Navbar(){
-    const [IsOpen, SetOpen] = useState<boolean>(false)
 
 
     return (
@@ -19,7 +16,7 @@ export default function Navbar(){
 
                     <Link className={"hover:scale-105 duration-300 ease-in-out cursor-pointer mt-2"}
                        to="/">
-                        <button
+                        <button id="HomeButton"
                             className={"w-[8rem] h-[3rem] bg-white border-2 border-[#FFA300] rounded cursor-pointer"}>
                             <h2 className={"text-base font-bold text-black text-balance text-center"}>Home</h2>
                         </button>
@@ -27,7 +24,7 @@ export default function Navbar(){
 
                     <Link className={"hover:scale-105 duration-300 ease-in-out cursor-pointer mt-2"}
                        to="/schedule">
-                        <button
+                        <button id="ScheduleButton"
                             className={"w-[8rem] h-[3rem] bg-white border-2 border-[#FFA300] rounded cursor-pointer"}>
                             <h2 className={"text-base font-bold text-black text-balance text-center"}>Schedule</h2>
                         </button>
