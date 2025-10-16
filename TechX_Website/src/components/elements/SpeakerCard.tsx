@@ -11,11 +11,11 @@ interface SpeakerCardProps {
 
 export default function SpeakerCard(props: SpeakerCardProps) {
     return (
-        <div className={"w-[100%] h-[575px] md:h-[600px] flex flex-col rounded-xl mb-5"}>
+        <div className={"w-full flex flex-col rounded-xl mb-2 md:h-[635px] md:mb-5"}>
 
-            <img className={"object-fit"} src={props.headshot} alt={`${props.name} headshot`}/>
+            <img className={"object-fit rounded-t-xl"} src={props.headshot} alt={`${props.name} headshot`}/>
 
-            <div className={"shadow-2xl relative h-full pl-[1rem] pt-[1.5rem] pr-[1rem]"}>
+            <div className={"shadow-2xl flex flex-col h-full pl-[1rem] pt-[1.5rem] pr-[1rem] pb-[1rem] rounded-b-xl relative"}>
 
                 <h2 className={"text-2xl font-bold mb-1 break-words"}>{props.name}</h2>
 
@@ -25,25 +25,26 @@ export default function SpeakerCard(props: SpeakerCardProps) {
                 <p className={"w-[90%] text-md md:text-xl text-gray-600 mt-3"}>{props.talkTitle}</p>
 
 
-                    <div className={"flex flex-col md:flex-row gap-2 mt-3 mb-7 text-sm pr-[1rem]"}>
+                    <div className={"flex flex-col gap-2 mt-3 mb-3 text-sm pr-[1rem]"}>
 
                         {props.pills.includes("Speaker") ?
                             <span className="Pill bg-green-100 text-green-800">Speaker</span> : null}
+
                         {props.pills.includes("Panel") ?
                             <span
-                                className={"Pill bg-purple-100 text-purple-800"}>"Careers in AI" Panelist</span> : null}
+                                className={"Pill bg-purple-100 text-purple-800"}>"Careers in Tech" Panelist</span> : null}
                         {props.pills.includes("PanelModerator") ? <span
-                            className={"Pill bg-purple-100 text-purple-800"}>"Careers in AI" Panel Moderator</span> : null}
+                            className={"Pill bg-purple-100 text-purple-800"}>"Careers in Tech" Panel Moderator</span> : null}
                         {props.pills.includes("Workshop") ?
                             <span className={"Pill bg-orange-100 text-orange-800 "}>Workshop</span> : null}
 
 
                     </div>
 
+                {/* Spacer to push LinkedIn icon to bottom */}
+                <div className={"flex-grow"}></div>
 
-
-
-                <div className={"absolute bottom-[1rem] right-[1rem]"}>
+                <div className={"flex justify-end mt-3"}>
                     <a href={props.linkedinLink} target="_blank" rel="noopener noreferrer">
                         <img className={"h-8"} src={linkedin} alt="Linkedin Icon"/>
                     </a>
