@@ -1,6 +1,6 @@
 ## TechX Florida 2025 — Website
 
-Live site: <a href="https://techxflorida.com" target="blank">techxflorida.com</a>
+Live site: <a href="https://techxflorida.com" target="_blank">techxflorida.com</a>
 
 Event: November 8, 2025 · University of South Florida · Tampa, FL
 
