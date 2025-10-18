@@ -13,7 +13,7 @@ export default function SpeakerCard(props: SpeakerCardProps) {
     return (
         <div className={"w-full flex flex-col rounded-xl mb-2 md:h-[635px] md:mb-5"}>
 
-            <img className={"object-fit rounded-t-xl"} src={props.headshot} alt={`${props.name} headshot`}/>
+            <img className={"object-fit rounded-t-xl"} src={props.headshot} alt={`${props.name} headshot`} loading="lazy"/>
 
             <div className={"shadow-2xl flex flex-col h-full pl-[1rem] pt-[1.5rem] pr-[1rem] pb-[1rem] rounded-b-xl relative"}>
 
@@ -46,7 +46,7 @@ export default function SpeakerCard(props: SpeakerCardProps) {
 
                 <div className={"flex justify-end mt-3"}>
                     <a href={props.linkedinLink} target="_blank" rel="noopener noreferrer">
-                        <img className={"h-8"} src={linkedin} alt="Linkedin Icon"/>
+                        <img className={"h-8"} src={linkedin} alt="Linkedin Icon" loading="lazy"/>
                     </a>
                 </div>
 

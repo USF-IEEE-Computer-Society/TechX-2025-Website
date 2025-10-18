@@ -16,12 +16,12 @@ export default function Photos(){
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center [&>img]:md:h-75 [&>img]:h-57 ">
 
-                <img src={IMG_0251} alt="Photo 5"/>
-                <img src={IMG_0016} alt="Photo 1"/>
-                <img src={IMG_0113} alt="Photo 2"/>
-                <img src={IMG_0063} alt="Photo 3" className={"hidden md:block"}/>
-                <img src={IMG_0218} alt="Photo 4" className={"hidden md:block"}/>
-                <img src={IMG_0287} alt="Photo 6" className={"hidden md:block"}/>
+                <img src={IMG_0251} alt="Photo 5" loading="lazy"/>
+                <img src={IMG_0016} alt="Photo 1" loading="lazy"/>
+                <img src={IMG_0113} alt="Photo 2" loading="lazy"/>
+                <img src={IMG_0063} alt="Photo 3" className={"hidden md:block"} loading="lazy"/>
+                <img src={IMG_0218} alt="Photo 4" className={"hidden md:block"} loading="lazy"/>
+                <img src={IMG_0287} alt="Photo 6" className={"hidden md:block"} loading="lazy"/>
 
             </div>
 

@@ -12,11 +12,20 @@ export interface ScheduleItem {
 
 export const scheduleData: ScheduleItem[] = [
     {
-        "time": "11:00 - 12:00",
+        "time": "11:00 - 11:40",
         "track1": {
             "title": "Check-in & Network",
-            "type": "Setup",
+            "type": "General",
             "description": "Connect with fellow attendees over coffee and get ready for the day"
+        },
+        "track2": null
+    },
+    {
+        "time": "11:40 - 12:00",
+        "track1": {
+            "title": "Opening remarks",
+            "type": "General",
+            "description": "Subheader"
         },
         "track2": null
     },
@@ -24,13 +33,13 @@ export const scheduleData: ScheduleItem[] = [
         "time": "12:00 - 12:30",
         "track1": {
             "title": "Mrinal Karvir",
-            "type": "Keynote Lecture",
+            "type": "Lecture",
             "description": "The Last Mile of Generative AI: Turning Ideas into Impact at Enterprise Scale"
         },
         "track2": {
-            "title": "-",
-            "type": "NONE",
-            "description": ""
+            "title": "Israel (Microsoft)",
+            "type": "Lecture",
+            "description": "Subheader"
         },
     },
     {
@@ -56,7 +65,7 @@ export const scheduleData: ScheduleItem[] = [
         "track2": {
             "title": "Lunch",
             "type": "General",
-            "description": "Refuel and network with speakersData and participants during the lunch break"
+            "description": "Refuel and network with speakers and participants during the lunch break"
         }
     },
     {
@@ -101,13 +110,13 @@ export const scheduleData: ScheduleItem[] = [
     {
         "time": "04:15 - 05:00",
         "track1": {
-            "title": `"Careers in AI" Panel`,
+            "title": `"Careers in Tech" Panel`,
             "type": "Panel",
-            "description": "Panel Moderator: Michael Viron <br> Panelists: Mrinal Karvir, Reginald Davis, Anna Bakhvalova, Lenar Mukhamadiev"
+            "description": "Panel Moderator: Michael Viron <br> <br> Panelists: Mrinal Karvir, Reginald Davis, Anna Bakhvalova, Lenar Mukhamadiev"
         },
         "track2": {
-            "title": `TBA`,
-            "type": "asd",
+            "title": `Networking session`,
+            "type": "General",
             "description": ""
         },
     }

@@ -10,7 +10,7 @@ export default function Whatsapp(){
 
 
                 <div>
-                    <img src={gbm} className="h-50 md:h-60"/>
+                    <img src={gbm} className="h-50 md:h-60" loading="lazy"/>
                 </div>
 
                 <div className={"flex flex-col items-center h-100% p-[2rem]"}>

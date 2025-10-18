@@ -37,9 +37,9 @@ export default function TeamCard(props: TeamCardProps) {
     return (
         <div className={`w-[100%] ${mobileHeightClass} ${mdHeightClass} ${lgHeightClass} flex flex-col rounded-xl mb-5`}>
 
-            <img className={"object-fit"} src={props.headshot} />
+            <img className={"object-fit"} src={props.headshot} loading="lazy"/>
 
-            <div className={"shadow-2xl relative h-full pl-[0.75rem] pt-[1.5rem] pr-[0.75rem]"}>
+            <div className={"shadow-2xl relative h-full pl-[0.75rem] pt-[1.5rem] pr-[0.75rem] rounded-b-xl"}>
 
                 <h2 className={"text-2xl font-bold break-words mb-4"}>{props.name}</h2>
 

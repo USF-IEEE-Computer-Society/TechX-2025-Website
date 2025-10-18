@@ -16,12 +16,12 @@ export default function IEEE(){
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-7 place-items-center">
 
-                <img src={ieee} className="h-16 md:h-32"/>
-                <img src={ieeelife} className="h-16 md:h-32"/>
-                <img src={ieeecs} className="h-16 md:h-32"/>
-                <img src={ieeecssyp} className="h-16 md:h-32"/>
-                <img src={ieeecsfwcs} className="h-16 md:h-32"/>
-                <img src={ieeecsusfwcs} className="h-16 md:h-32"/>
+                <img src={ieee} className="h-16 md:h-32" loading="lazy"/>
+                <img src={ieeelife} className="h-16 md:h-32" loading="lazy"/>
+                <img src={ieeecs} className="h-16 md:h-32" loading="lazy"/>
+                <img src={ieeecssyp} className="h-16 md:h-32" loading="lazy"/>
+                <img src={ieeecsfwcs} className="h-16 md:h-32" loading="lazy"/>
+                <img src={ieeecsusfwcs} className="h-16 md:h-32" loading="lazy"/>
 
 
             </div>

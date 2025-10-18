@@ -15,10 +15,10 @@ export default function Companies(){
             <div className="grid grid-cols-2 md:grid-cols-2 gap-7 place-items-center">
 
                 <a href="https://ironeaglex.com" target="_blank" rel="noopener noreferrer">
-                    <img src={iexImg} className="h-16 md:h-32"/>
+                    <img src={iexImg} className="h-16 md:h-32" loading="lazy"/>
                 </a>
                 <a href="https://www.verizon.com" target="_blank" rel="noopener noreferrer">
-                    <img src={verizonImg} className="h-16 md:h-32 "/>
+                    <img src={verizonImg} className="h-16 md:h-32" loading="lazy"/>
                 </a>
 
 

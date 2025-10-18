@@ -29,7 +29,7 @@ export const teamProfessionsData = [
         linkedinLink: "https://www.linkedin.com/in/antra-malhotra-455b608/",
         pills: ["Planning"]
     },
-    /*
+
     {
         name: "Anne Ferrando-Klemet ",
         major: "Treasurer at IEEE Computer Society Florida West Coast Section",
@@ -38,7 +38,6 @@ export const teamProfessionsData = [
         linkedinLink: "https://www.linkedin.com/in/anneferrandoklemet/",
         pills: ["Finance"]
     }
-    */
 ];
 
 export default teamProfessionsData
