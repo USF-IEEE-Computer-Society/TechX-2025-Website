@@ -1,5 +1,8 @@
 import iexImg from "../../../src/assets/companies/IEX_GDIT_black.png"
 import verizonImg from "../../../src/assets/companies/Verizon_GlowWordmark_RGB_2025.jpg"
+import tampadevsImg from "../../../src/assets/companies/tampa-devs logo.svg"
+import isacaImg from "../../../src/assets/companies/ISACA_logo_WestFlorida_RGB.png"
+import CouchBaseImg from "../../../src/assets/companies/Couchbase_Logo.jpg"
 
 
 export default function Companies(){
@@ -12,7 +15,7 @@ export default function Companies(){
                     with the companies tabling and showcasing opportunities at TechX Florida 2025</p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-2 gap-7 place-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-7 place-items-center">
 
                 <a href="https://ironeaglex.com" target="_blank" rel="noopener noreferrer">
                     <img src={iexImg} className="h-16 md:h-32" loading="lazy"/>
@@ -20,11 +23,20 @@ export default function Companies(){
                 <a href="https://www.verizon.com" target="_blank" rel="noopener noreferrer">
                     <img src={verizonImg} className="h-16 md:h-32" loading="lazy"/>
                 </a>
+                <a href="https://www.tampadevs.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={tampadevsImg} className="h-16 md:h-32" loading="lazy"/>
+                </a>
+                <a href="https://www.westfloridaisaca.org/" target="_blank" rel="noopener noreferrer">
+                    <img src={isacaImg} className="h-16 md:h-32" loading="lazy"/>
+                </a>
+                <a href="https://www.couchbase.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={CouchBaseImg} className="h-16 md:h-32" loading="lazy"/>
+                </a>
 
 
             </div>
 
-            <h2 className={"mt-10 text-center font-bold text-2xl"}>More companies and communities joining soon!</h2>
+            <h2 className={"mt-15 text-center font-bold text-2xl"}>More companies and communities joining soon!</h2>
 
 
         </div>

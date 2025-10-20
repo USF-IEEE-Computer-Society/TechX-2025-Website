@@ -8,6 +8,7 @@ export interface ScheduleItem {
     time: string;
     track1: TrackItem | null;
     track2: TrackItem | null;
+    track3: TrackItem | null;
 }
 
 export const scheduleData: ScheduleItem[] = [
@@ -18,7 +19,8 @@ export const scheduleData: ScheduleItem[] = [
             "type": "General",
             "description": "Connect with fellow attendees over coffee and get ready for the day"
         },
-        "track2": null
+        "track2": null,
+        "track3": null
     },
     {
         "time": "11:40 - 12:00",
@@ -27,7 +29,8 @@ export const scheduleData: ScheduleItem[] = [
             "type": "General",
             "description": "Subheader"
         },
-        "track2": null
+        "track2": null,
+        "track3": null
     },
     {
         "time": "12:00 - 12:30",
@@ -37,10 +40,15 @@ export const scheduleData: ScheduleItem[] = [
             "description": "The Last Mile of Generative AI: Turning Ideas into Impact at Enterprise Scale"
         },
         "track2": {
-            "title": "Israel (Microsoft)",
+            "title": "Israel Vega",
             "type": "Lecture",
-            "description": "Subheader"
+            "description": "TBA"
         },
+        "track3": {
+            "title": "Networking Tabling",
+            "type": "General",
+            "description": "Network with company representatives and explore opportunities"
+        }
     },
     {
         "time": "12:45 - 01:30",
@@ -53,7 +61,8 @@ export const scheduleData: ScheduleItem[] = [
             "title": "Raghuvan Lakshmana",
             "type": "Workshop",
             "description": "Interactive Document Search Using a Custom AI model"
-        }
+        },
+        "track3": null
     },
     {
         "time": "01:30 - 02:15",
@@ -66,7 +75,8 @@ export const scheduleData: ScheduleItem[] = [
             "title": "Lunch",
             "type": "General",
             "description": "Refuel and network with speakers and participants during the lunch break"
-        }
+        },
+        "track3": null
     },
     {
         "time": "02:15 - 02:45",
@@ -79,7 +89,8 @@ export const scheduleData: ScheduleItem[] = [
             "title": "Joe Blankership",
             "type": "Lecture",
             "description": "Playing with AI: Gamification for Endangered Language Models"
-        }
+        },
+        "track3": null
     },
     {
         "time": "03:00 - 03:30",
@@ -92,7 +103,8 @@ export const scheduleData: ScheduleItem[] = [
             "title": "Subhajit Paul",
             "type": "Lecture",
             "description": "AI application in ERP: Effective Mobile Material Placement in Warehouse using AI/ML"
-        }
+        },
+        "track3": null
     },
     {
         "time": "03:40 - 04:10",
@@ -105,7 +117,8 @@ export const scheduleData: ScheduleItem[] = [
             "title": "Reginald Davis",
             "type": "Lecture",
             "description": "Copilot in Action: Real-World AI Use Cases in Solutions"
-        }
+        },
+        "track3": null
     },
     {
         "time": "04:15 - 05:00",
@@ -119,5 +132,6 @@ export const scheduleData: ScheduleItem[] = [
             "type": "General",
             "description": ""
         },
+        "track3": null
     }
 ];
