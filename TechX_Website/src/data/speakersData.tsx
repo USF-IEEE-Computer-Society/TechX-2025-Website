@@ -10,6 +10,7 @@ import lenarImg from "../assets/speakers/lenar.png";
 import sutapimg from "../assets/speakers/sutap.png";
 import michael from "../assets/speakers/michael.png";
 import mrunalimg from "../assets/speakers/mrunal.png";
+import israelImg from "../assets/speakers/israel.png";
 
 
 export const speakersData = [
@@ -96,7 +97,7 @@ export const speakersData = [
     {
         name: "Antra Malhotra",
         company: "Verizon",
-        talkTitle: "TBA",
+        talkTitle: "Building Applied AI Solutions: From Experimentation to Enterprise Impact",
         headshot: antraImg,
         linkedinLink: "https://www.linkedin.com/in/antra-malhotra-455b608/",
         pills:["Speaker", "IEEECS"]
@@ -104,9 +105,17 @@ export const speakersData = [
     {
         name: "Sutap Chatterjee",
         company: "Verizon",
-        talkTitle: "TBA",
+        talkTitle: "Building Applied AI Solutions: From Experimentation to Enterprise Impact",
         headshot: sutapimg,
         linkedinLink: "https://www.linkedin.com/in/sutapchatterjee/",
+        pills:["Speaker"]
+    },
+    {
+        name: "Israel Vega Jr",
+        company: "Microsoft",
+        talkTitle: "Measuring the Success of AI Projects",
+        headshot: israelImg,
+        linkedinLink: "https://www.linkedin.com/in/ivega/",
         pills:["Speaker"]
     },
 ];

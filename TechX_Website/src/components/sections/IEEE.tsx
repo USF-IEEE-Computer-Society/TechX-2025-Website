@@ -14,16 +14,23 @@ export default function IEEE(){
                 <p className={"w-[90%] text-md md:text-2xl text-ellipsis text-gray-600 text-center text-pretty"}> The world’s largest technical professional organization </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-7 place-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
+                {/* upper deck */}
+                <img src={ieee} className="h-16 md:h-32"/>
+                <img src={ieeecs} className="h-16 md:h-32"/>
+                <img src={ieeecssyp} className="h-16 md:h-32"/>
 
-                <img src={ieee} className="h-16 md:h-32" loading="lazy"/>
-                <img src={ieeelife} className="h-16 md:h-32" loading="lazy"/>
-                <img src={ieeecs} className="h-16 md:h-32" loading="lazy"/>
-                <img src={ieeecssyp} className="h-16 md:h-32" loading="lazy"/>
-                <img src={ieeecsfwcs} className="h-16 md:h-32" loading="lazy"/>
-                <img src={ieeecsusfwcs} className="h-16 md:h-32" loading="lazy"/>
+                {/* lower deck - mobile */}
+                <img src={ieeecsfwcs} className="h-16 md:hidden"/>
+                <div className="col-span-2 flex justify-center md:hidden">
+                    <img src={ieeecsusfwcs} className="h-16"/>
+                </div>
 
-
+                {/* lower deck - desktop */}
+                <div className="hidden md:flex md:col-span-3 justify-center gap-10">
+                    <img src={ieeecsfwcs} className="h-32"/>
+                    <img src={ieeecsusfwcs} className="h-32"/>
+                </div>
             </div>
 
 

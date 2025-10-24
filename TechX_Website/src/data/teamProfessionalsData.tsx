@@ -2,6 +2,7 @@ import andyImg from "../assets/team/andy.png";
 import antraImg from "../assets/speakers/antra.png";
 import annaImg from "../assets/speakers/anna.png";
 import anneImg from "../assets/team/anne.jpg";
+import noimage from "../assets/team/placeholder_female1.webp";
 
 
 export const teamProfessionsData = [
@@ -37,6 +38,14 @@ export const teamProfessionsData = [
         headshot: anneImg,
         linkedinLink: "https://www.linkedin.com/in/anneferrandoklemet/",
         pills: ["Finance"]
+    },
+    {
+        name: "Sasha Mosich",
+        major: "Professional Photographer",
+        year: "",
+        headshot: noimage,
+        linkedinLink: "https://sashamosich.myportfolio.com/",
+        pills: ["Photography"]
     }
 ];
 
