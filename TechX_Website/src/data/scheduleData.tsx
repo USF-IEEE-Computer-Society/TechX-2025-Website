@@ -13,27 +13,21 @@ export interface ScheduleItem {
 
 export const scheduleData: ScheduleItem[] = [
     {
-        "time": "11:00 - 11:40",
+        "time": "11:00 AM - 11:40 AM",
         "track1": {
-            "title": "Check-in & Network",
+            "title": "Check-in",
             "type": "General",
             "description": "Connect with fellow attendees over coffee and get ready for the day"
         },
         "track2": null,
-        "track3": null
-    },
-    {
-        "time": "11:40 - 12:00",
-        "track1": {
-            "title": "Opening remarks",
+        "track3": {
+            "title": "Networking",
             "type": "General",
-            "description": "Subheader"
-        },
-        "track2": null,
-        "track3": null
+            "description": "Network with company representatives and explore opportunities"
+        }
     },
     {
-        "time": "12:00 - 12:30",
+        "time": "12:00 PM - 12:30 PM",
         "track1": {
             "title": "Mrinal Karvir",
             "type": "Lecture",
@@ -45,13 +39,13 @@ export const scheduleData: ScheduleItem[] = [
             "description": "TBA"
         },
         "track3": {
-            "title": "Networking Tabling",
+            "title": "Networking",
             "type": "General",
             "description": "Network with company representatives and explore opportunities"
         }
     },
     {
-        "time": "12:45 - 01:30",
+        "time": "12:45 PM - 1:30 PM",
         "track1": {
             "title": "Yasmine Gardiner",
             "type": "Workshop",
@@ -62,38 +56,42 @@ export const scheduleData: ScheduleItem[] = [
             "type": "Workshop",
             "description": "Interactive Document Search Using a Custom AI model"
         },
-        "track3": null
+        "track3": {
+            "title": "Networking",
+            "type": "General",
+            "description": "Network with company representatives and explore opportunities"
+        }
     },
     {
-        "time": "01:30 - 02:15",
-        "track1": {
-            "title": "Headshot setup (available 1:30 - 3:30)",
-            "type": "General",
-            "description": "Get a professional headshot taken for LinkedIn or your portfolio"
-        },
-        "track2": {
+        "time": "1:30 PM - 2:00 PM",
+        "track1": null,
+        "track2": null,
+        "track3": {
             "title": "Lunch",
             "type": "General",
             "description": "Refuel and network with speakers and participants during the lunch break"
-        },
-        "track3": null
+        }
     },
     {
-        "time": "02:15 - 02:45",
+        "time": "2:00 PM - 2:45 PM",
         "track1": {
             "title": "Anna Bakhvalova",
             "type": "Lecture",
             "description": "AI's Impact on Marketing: Trends and Anti-trends"
         },
         "track2": {
-            "title": "Joe Blankership",
+            "title": "Joe Blankenship",
             "type": "Lecture",
             "description": "Playing with AI: Gamification for Endangered Language Models"
         },
-        "track3": null
+        "track3": {
+            "title": "Headshots",
+            "type": "General",
+            "description": "Get a professional headshot taken for LinkedIn or your portfolio"
+        }
     },
     {
-        "time": "03:00 - 03:30",
+        "time": "3:00 PM - 3:30 PM",
         "track1": {
             "title": "Antra Malhotra & Sutap Chatterjee",
             "type": "Lecture",
@@ -104,10 +102,14 @@ export const scheduleData: ScheduleItem[] = [
             "type": "Lecture",
             "description": "AI application in ERP: Effective Mobile Material Placement in Warehouse using AI/ML"
         },
-        "track3": null
+        "track3": {
+            "title": "Headshots",
+            "type": "General",
+            "description": "Get a professional headshot taken for LinkedIn or your portfolio"
+        }
     },
     {
-        "time": "03:40 - 04:10",
+        "time": "3:40 PM - 4:10 PM",
         "track1": {
             "title": "Mrunal Gangrade",
             "type": "Lecture",
@@ -118,10 +120,14 @@ export const scheduleData: ScheduleItem[] = [
             "type": "Lecture",
             "description": "Copilot in Action: Real-World AI Use Cases in Solutions"
         },
-        "track3": null
+        "track3": {
+            "title": "Headshots",
+            "type": "General",
+            "description": "Get a professional headshot taken for LinkedIn or your portfolio"
+        }
     },
     {
-        "time": "04:15 - 05:00",
+        "time": "4:15 PM - 5:00 PM",
         "track1": {
             "title": `"Careers in Tech" Panel`,
             "type": "Panel",
