@@ -154,7 +154,7 @@ export const scheduleData = {
       id: "16",
       title: "Refuel and network with speakers and participants during the lunch break",
       speaker: "Lunch",
-      start: "13:15",
+      start: "13:30",
       end: "14:15",
       roomId: "r4",
       type: "Break",

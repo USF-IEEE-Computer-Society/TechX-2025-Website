@@ -209,11 +209,11 @@ const SessionCard: React.FC<{
       }}
       className="rounded-lg border-2 border-gray-300 p-1.5 shadow-sm bg-white cursor-pointer hover:shadow-md transition-shadow"
     >
-      {s.speaker && <div className="text-[10px] sm:text-xs font-semibold leading-tight">{s.speaker}</div>}
-      <div className="text-[9px] sm:text-[10px] text-gray-600 mt-0.5">{s.title}</div>
+      {s.speaker && <div className="text-[10px] sm:text-base font-semibold leading-tight">{s.speaker}</div>}
+      <div className="text-[9px] sm:text-sm text-gray-600 mt-0.5">{s.title}</div>
       <div className="flex items-center gap-1 mt-0.5 flex-wrap">
         <div className={`inline-flex px-1 py-0.5 text-[8px] sm:text-[9px] rounded-full ${pill}`}>{s.type ?? "Talk"}</div>
-        <div className="text-[8px] sm:text-[9px] text-gray-500">
+        <div className="text-[8px] sm:text-[11px] text-gray-500">
           {formatTime12Hour(s.start)}–{formatTime12Hour(s.end)}
         </div>
       </div>
@@ -373,7 +373,7 @@ type ViewMode = 'pair1' | 'pair2';
 export default function ConferenceScheduler() {
   const START_HOUR = 10;
   const END_HOUR = 18;
-  const PIXELS_PER_HOUR = 170;
+  const PIXELS_PER_HOUR = 200;
   const MOBILE_PIXELS_PER_HOUR = 220;
   const [viewMode, setViewMode] = useState<ViewMode>('pair1');
 

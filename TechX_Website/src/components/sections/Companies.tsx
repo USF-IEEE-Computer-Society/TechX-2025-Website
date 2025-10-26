@@ -15,7 +15,7 @@ export default function Companies(){
                     with the companies tabling and showcasing opportunities at TechX Florida 2025</p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-7 place-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-12 place-items-center">
 
                 <a href="https://ironeaglex.com" target="_blank" rel="noopener noreferrer">
                     <img src={iexImg} className="h-16 md:h-32" loading="lazy"/>
