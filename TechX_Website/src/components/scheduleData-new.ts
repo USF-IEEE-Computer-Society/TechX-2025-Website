@@ -166,7 +166,7 @@ export const scheduleData = {
       title: "Get a professional headshot taken for LinkedIn or your portfolio",
       speaker: "Professional Headshots",
       start: "14:00",
-      end: "16:00",
+      end: "17:00",
       roomId: "r3",
       type: "Break",
     },

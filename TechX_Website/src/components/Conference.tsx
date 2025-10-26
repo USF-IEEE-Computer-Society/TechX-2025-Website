@@ -205,15 +205,15 @@ const SessionCard: React.FC<{
         left: `calc(${leftPercent}% + 4px)`,
         width: `calc(${widthPercent}% - 8px)`,
         height: `${height}px`,
-        minHeight: '40px'
+        minHeight: '30px'
       }}
-      className="rounded-lg border-2 border-gray-300 p-2 shadow-sm bg-white cursor-pointer hover:shadow-md transition-shadow"
+      className="rounded-lg border-2 border-gray-300 p-1.5 shadow-sm bg-white cursor-pointer hover:shadow-md transition-shadow"
     >
-      {s.speaker && <div className="text-xs sm:text-sm font-semibold leading-tight">{s.speaker}</div>}
-      <div className="text-[10px] sm:text-xs text-gray-600 mt-0.5">{s.title}</div>
-      <div className="flex items-center gap-1 mt-1 flex-wrap">
-        <div className={`inline-flex px-1.5 py-0.5 text-[9px] sm:text-[10px] rounded-full ${pill}`}>{s.type ?? "Talk"}</div>
-        <div className="text-[9px] sm:text-[10px] text-gray-500">
+      {s.speaker && <div className="text-[10px] sm:text-xs font-semibold leading-tight">{s.speaker}</div>}
+      <div className="text-[9px] sm:text-[10px] text-gray-600 mt-0.5">{s.title}</div>
+      <div className="flex items-center gap-1 mt-0.5 flex-wrap">
+        <div className={`inline-flex px-1 py-0.5 text-[8px] sm:text-[9px] rounded-full ${pill}`}>{s.type ?? "Talk"}</div>
+        <div className="text-[8px] sm:text-[9px] text-gray-500">
           {formatTime12Hour(s.start)}–{formatTime12Hour(s.end)}
         </div>
       </div>
@@ -258,16 +258,16 @@ const MergedSessionCard: React.FC<{
           left: '8px',
           right: '8px',
           height: `${height}px`,
-          minHeight: '40px',
+          minHeight: '30px',
           zIndex: 10,
         }}
-        className="rounded-lg border-2 border-gray-300 p-2 shadow-sm bg-white cursor-pointer hover:shadow-md transition-shadow flex flex-col items-center justify-center text-center"
+        className="rounded-lg border-2 border-gray-300 p-1.5 shadow-sm bg-white cursor-pointer hover:shadow-md transition-shadow flex flex-col items-center justify-center text-center"
       >
-        {session.speaker && <div className="text-xs sm:text-sm font-semibold leading-tight">{session.speaker}</div>}
-        <div className="text-[10px] sm:text-xs text-gray-600 mt-0.5">{session.title}</div>
-        <div className="flex items-center justify-center gap-1 mt-1 flex-wrap">
-          <div className={`inline-flex px-1.5 py-0.5 text-[9px] sm:text-[10px] rounded-full ${pill}`}>{session.type ?? "Talk"}</div>
-          <div className="text-[9px] sm:text-[10px] text-gray-500">
+        {session.speaker && <div className="text-[10px] sm:text-xs font-semibold leading-tight">{session.speaker}</div>}
+        <div className="text-[9px] sm:text-[10px] text-gray-600 mt-0.5 line-clamp-2">{session.title}</div>
+        <div className="flex items-center justify-center gap-1 mt-0.5 flex-wrap">
+          <div className={`inline-flex px-1 py-0.5 text-[8px] sm:text-[9px] rounded-full ${pill}`}>{session.type ?? "Talk"}</div>
+          <div className="text-[8px] sm:text-[9px] text-gray-500">
             {formatTime12Hour(session.start)}–{formatTime12Hour(session.end)}
           </div>
         </div>
@@ -373,8 +373,8 @@ type ViewMode = 'pair1' | 'pair2';
 export default function ConferenceScheduler() {
   const START_HOUR = 10;
   const END_HOUR = 18;
-  const PIXELS_PER_HOUR = 190;
-  const MOBILE_PIXELS_PER_HOUR = PIXELS_PER_HOUR * 1.4;
+  const PIXELS_PER_HOUR = 170;
+  const MOBILE_PIXELS_PER_HOUR = 220;
   const [viewMode, setViewMode] = useState<ViewMode>('pair1');
 
   const sessionsByRoom = useMemo(() => {
@@ -455,9 +455,9 @@ export default function ConferenceScheduler() {
 
 
       {/* Mobile: Dynamic room view (always two rooms) */}
-      <div className={`lg:hidden px-3 pt-3`}>
+      <div className={`lg:hidden px-3 pt-3 overflow-y-auto max-h-[600px] border-2 border-gray-200 rounded-lg mx-3 shadow-sm`}>
         <div className={`relative`}>
-          <div className={`grid gap-2 grid-cols-[50px_1fr_1fr]`}>
+          <div className={`grid gap-2 grid-cols-[20px_1fr_1fr]`}>
             <TimeColumn startHour={START_HOUR} endHour={END_HOUR} pixelsPerHour={MOBILE_PIXELS_PER_HOUR} />
             {displayedRooms.map((room) => (
               <div key={room.id}>
@@ -494,41 +494,55 @@ export default function ConferenceScheduler() {
       </div>
 
       {/* Desktop: All rooms side-by-side */}
-      <div className="hidden lg:block px-6">
-        <div className="relative">
-          <div className="grid grid-cols-[80px_1fr_1fr_1fr_1fr] gap-4">
-            <TimeColumn startHour={START_HOUR} endHour={END_HOUR} pixelsPerHour={PIXELS_PER_HOUR} />
-            
-            {rooms.map((room) => (
-              <div key={room.id}>
-                <RoomColumn 
-                  room={room} 
-                  sessions={sessionsByRoom[room.id] || []} 
-                  startHour={START_HOUR}
-                  endHour={END_HOUR}
-                  pixelsPerHour={PIXELS_PER_HOUR}
-                  hiddenSessionIds={desktopHiddenIds}
-                />
-              </div>
-            ))}
-          </div>
-          {/* Merged sessions overlay for desktop */}
-          {desktopMergedSessions.length > 0 && (
-            <div className="absolute left-0 right-0 pointer-events-none" style={{ top: '42px' }}>
-              <div className="grid grid-cols-[80px_1fr_1fr_1fr_1fr] gap-4">
-                <div></div>
-                {desktopMergedSessions.map((session) => (
-                  <MergedSessionCard
-                    key={session.id}
-                    session={session}
-                    displayedRoomIds={desktopDisplayedRoomIds}
-                    startHour={START_HOUR}
-                    pixelsPerHour={PIXELS_PER_HOUR}
-                  />
-                ))}
-              </div>
+      <div className="hidden lg:block mx-6 border-2 border-gray-200 rounded-lg shadow-sm">
+        {/* Fixed headers */}
+        <div className="grid grid-cols-[80px_1fr_1fr_1fr_1fr] gap-4 px-6 py-4 bg-white border-b-2 border-gray-200 rounded-t-lg sticky top-0 z-20">
+          <div></div>
+          {rooms.map((room) => (
+            <div key={room.id} className="font-semibold text-lg sm:text-xl lg:text-2xl px-2 text-center">
+              {room.name}
             </div>
-          )}
+          ))}
+        </div>
+
+        {/* Scrollable content */}
+        <div className="px-6 overflow-y-auto max-h-[600px]">
+          <div className="relative">
+            <div className="grid grid-cols-[80px_1fr_1fr_1fr_1fr] gap-4">
+              <TimeColumn startHour={START_HOUR} endHour={END_HOUR} pixelsPerHour={PIXELS_PER_HOUR} />
+              
+              {rooms.map((room) => (
+                <div key={room.id}>
+                  <RoomColumn 
+                    room={room} 
+                    sessions={sessionsByRoom[room.id] || []} 
+                    startHour={START_HOUR}
+                    endHour={END_HOUR}
+                    pixelsPerHour={PIXELS_PER_HOUR}
+                    hiddenSessionIds={desktopHiddenIds}
+                    showHeader={false}
+                  />
+                </div>
+              ))}
+            </div>
+            {/* Merged sessions overlay for desktop */}
+            {desktopMergedSessions.length > 0 && (
+              <div className="absolute left-0 right-0 pointer-events-none" style={{ top: '0px' }}>
+                <div className="grid grid-cols-[80px_1fr_1fr_1fr_1fr] gap-4">
+                  <div></div>
+                  {desktopMergedSessions.map((session) => (
+                    <MergedSessionCard
+                      key={session.id}
+                      session={session}
+                      displayedRoomIds={desktopDisplayedRoomIds}
+                      startHour={START_HOUR}
+                      pixelsPerHour={PIXELS_PER_HOUR}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
