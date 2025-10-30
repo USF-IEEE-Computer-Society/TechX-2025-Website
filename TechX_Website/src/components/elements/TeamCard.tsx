@@ -7,7 +7,6 @@ interface TeamCardProps {
     linkedinLink: string;
     year: string;
     pills: string[];
-    index: number;
 }
 
 function getPillColor(pill: string): string {
@@ -30,40 +29,31 @@ function getPillColor(pill: string): string {
 }
 
 export default function TeamCard(props: TeamCardProps) {
-    const mobileHeightClass = props.index < 4 ? "h-[525px]" : "h-[460px]";
-    const mdHeightClass = props.index < 6 ? "md:h-[550px]" : "md:h-[490px]";
-    const lgHeightClass = props.index < 5 ? "lg:h-[575px]" : "lg:h-[525px]";
-    
     return (
-        <div className={`w-[100%] ${mobileHeightClass} ${mdHeightClass} ${lgHeightClass} flex flex-col rounded-xl mb-5`}>
+        <div className={"w-full flex flex-col rounded-xl mb-5 h-full"}>
 
-            <img className={"object-fit"} src={props.headshot} loading="lazy"/>
+            <img className={"object-cover rounded-t-xl w-full aspect-square"} src={props.headshot} loading="lazy"/>
 
-            <div className={"shadow-2xl relative h-full pl-[0.75rem] pt-[1.5rem] pr-[0.75rem] rounded-b-xl"}>
+            <div className={"shadow-2xl flex flex-col h-full pl-[0.75rem] pt-[1.5rem] pr-[0.75rem] pb-[1rem] rounded-b-xl"}>
 
                 <h2 className={"text-2xl font-bold break-words mb-4"}>{props.name}</h2>
-
 
                 <h3 className={"text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight break-words"}>{props.major}</h3>
 
                 <p className={"text-md"}>{props.year}</p>
 
-
-                <div className={"mt-3"}>
-
+                <div className={"mt-3 mb-3"}>
                     {props.pills.map((pill, idx) => (
                         <span className={`inline-flex self-start w-fit px-2 py-1 font-medium rounded-lg md:rounded-full text-xs md:text-sm m-1 ${getPillColor(pill)}`} key={idx}>{pill}</span>
                     ))}
-
-
                 </div>
 
+                {/* Spacer to push LinkedIn icon to bottom */}
+                <div className={"flex-grow"}></div>
 
-
-
-                <div className={"absolute bottom-[1rem] right-[1rem]"}>
+                <div className={"flex justify-end mt-3"}>
                     <a href={props.linkedinLink} target="_blank" rel="noopener noreferrer">
-                        <img className={"h-8"} src={linkedin}/>
+                        <img className={"h-8"} src={linkedin} alt="LinkedIn Icon" loading="lazy"/>
                     </a>
                 </div>
 

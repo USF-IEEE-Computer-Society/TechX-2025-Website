@@ -3,6 +3,7 @@ import antraImg from "../assets/speakers/antra.png";
 import annaImg from "../assets/speakers/anna.png";
 import anneImg from "../assets/team/anne.jpg";
 import noimage from "../assets/team/placeholder_female1.webp";
+import sashaImg from "../assets/team/sasha.jpg";
 
 
 export const teamProfessionsData = [
@@ -43,8 +44,8 @@ export const teamProfessionsData = [
         name: "Sasha Mosich",
         major: "Professional Photographer",
         year: "",
-        headshot: noimage,
-        linkedinLink: "https://sashamosich.myportfolio.com/",
+        headshot: sashaImg,
+        linkedinLink: "https://www.linkedin.com/in/sasha-marie-mosich-055833253",
         pills: ["Photography"]
     }
 ];

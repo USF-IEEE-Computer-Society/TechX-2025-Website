@@ -38,7 +38,7 @@ export const teamData = [
         year: "Junior",
         headshot: egorimg,
         linkedinLink: "https://www.linkedin.com/in/kharitonov-egor/",
-        pills: ["Outreach", "Marketing", "Website", "Planning"]
+        pills: ["Outreach", "Marketing", "Website", "Planning","Logistics"]
     },
     {
         name: "Elan Berezovskiy",
@@ -46,7 +46,7 @@ export const teamData = [
         year: "Sophomore",
         headshot: elanimg,
         linkedinLink: "https://www.linkedin.com/in/elan-berezovskiy-5a7618263/",
-        pills: ["Finance", "Sponsorships", "Planning"]
+        pills: ["Finance", "Sponsorships", "Planning", "Logistics"]
     },
     {
         name: "Sofia Mitsuyuki",
@@ -54,7 +54,7 @@ export const teamData = [
         year: "Junior",
         headshot: sofiaimg,
         linkedinLink: "https://www.linkedin.com/in/sofiamitsu/",
-        pills: ["Outreach", "Planning"]
+        pills: ["Outreach", "Planning", "Logistics"]
     },
     {
         name: "Sara Perez-Soto",

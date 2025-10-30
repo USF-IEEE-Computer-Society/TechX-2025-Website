@@ -52,7 +52,7 @@ export const speakersData = [
         talkTitle: "Bridging the Gap Between Black Box Models and Business Risk: Explainable AI in Regulated Industries",
         headshot: mrunalimg,
         linkedinLink: "https://www.linkedin.com/in/mrunal-gangrade-8087121b5/",
-        pills:["Speaker"]
+        pills:["Speaker","Tabling"]
     },
     {
         name: "Anna Bakhvalova",

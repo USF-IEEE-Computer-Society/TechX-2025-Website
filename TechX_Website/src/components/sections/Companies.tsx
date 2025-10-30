@@ -3,6 +3,8 @@ import verizonImg from "../../../src/assets/companies/Verizon_GlowWordmark_RGB_2
 import tampadevsImg from "../../../src/assets/companies/tampa-devs logo.svg"
 import isacaImg from "../../../src/assets/companies/ISACA_logo_WestFlorida_RGB.png"
 import CouchBaseImg from "../../../src/assets/companies/Couchbase_Logo.jpg"
+import USFITImg from "../../../src/assets/companies/information-technology-lightbg-2c-rgb-h.png"
+import uberaiImg from "../../../src/assets/companies/uberai.jpg"
 
 
 export default function Companies(){
@@ -23,21 +25,27 @@ export default function Companies(){
                 <a href="https://www.verizon.com" target="_blank" rel="noopener noreferrer">
                     <img src={verizonImg} className="h-16 md:h-32" loading="lazy"/>
                 </a>
-                <a href="https://www.tampadevs.com/" target="_blank" rel="noopener noreferrer">
-                    <img src={tampadevsImg} className="h-16 md:h-32" loading="lazy"/>
-                </a>
+
                 <a href="https://www.westfloridaisaca.org/" target="_blank" rel="noopener noreferrer">
                     <img src={isacaImg} className="h-16 md:h-32" loading="lazy"/>
                 </a>
                 <a href="https://www.couchbase.com/" target="_blank" rel="noopener noreferrer">
                     <img src={CouchBaseImg} className="h-16 md:h-32" loading="lazy"/>
                 </a>
+                <a href="https://www.usf.edu/it/" target="_blank" rel="noopener noreferrer">
+                    <img src={USFITImg} className="h-16 md:h-32" loading="lazy"/>
+                </a>
+                <a href="https://www.uber.com/us/en/ai-solutions/" target="_blank" rel="noopener noreferrer">
+                    <img src={uberaiImg} className="h-16 md:h-32" loading="lazy"/>
+                </a>
+
 
 
             </div>
 
-            <h2 className={"mt-15 text-center font-bold text-2xl"}>More companies and communities joining soon!</h2>
-
+            <a href="https://www.tampadevs.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={tampadevsImg} className="h-16 md:h-32 mt-5" loading="lazy"/>
+            </a>
 
         </div>
     )

@@ -28,7 +28,6 @@ export default function Team(){
                         headshot={s.headshot}
                         linkedinLink={s.linkedinLink}
                         pills={s.pills}
-                        index={i}
                     />
                 ))}
 
@@ -50,7 +49,6 @@ export default function Team(){
                         headshot={s.headshot}
                         linkedinLink={s.linkedinLink}
                         pills={s.pills}
-                        index={i}
                     />
                 ))}
 

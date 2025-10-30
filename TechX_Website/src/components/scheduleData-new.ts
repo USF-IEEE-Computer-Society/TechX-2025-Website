@@ -67,8 +67,8 @@ export const scheduleData = {
     },
     {
       id: "6",
-      title: "Moderated panel on career paths, hiring expectations, and practical advice for early-career engineers",
-      speaker: "Careers in Tech Panel",
+      title: "Careers in Tech Panel",
+      speaker: "Moderated panel on career paths, hiring expectations, and practical advice for early-career engineers",
       start: "16:15",
       end: "17:00",
       roomId: "r1",
@@ -123,8 +123,8 @@ export const scheduleData = {
     },
     {
       id: "12",
-      title: "Open mixer to recap key takeaways and swap contacts",
-      speaker: "Networking session",
+      title: "Networking session",
+      speaker: "Open mixer to connect more with fellow participants & swap contacts",
       start: "16:15",
       end: "17:00",
       roomId: "r2",
@@ -134,8 +134,8 @@ export const scheduleData = {
     // Hall of Flags
     {
       id: "13",
-      title: "Connect with fellow attendees over coffee and donuts",
-      speaker: "Check-in & Network",
+      title: "Check-in Start & Network",
+      speaker: "Connect with fellow students & industry guests over coffee & donuts",
       start: "11:00",
       end: "11:50",
       roomId: "r3",
@@ -143,8 +143,8 @@ export const scheduleData = {
     },
     {
       id: "15",
-      title: "Network with companies and local tech community representatives; explore new opportunities",
-      speaker: "Tabling",
+      title: "Tabling",
+      speaker: "Network with Verizon, Couchbase, Iron EagleX & local tech community representatives; explore new opportunities",
       start: "11:00",
       end: "13:30",
       roomId: "r3",
@@ -152,8 +152,8 @@ export const scheduleData = {
     },
     {
       id: "16",
-      title: "Refuel and network with speakers and participants during the lunch break",
-      speaker: "Lunch",
+      title: "Lunch",
+      speaker: "Refuel & network with speakers & participants during the lunch break",
       start: "13:30",
       end: "14:15",
       roomId: "r4",
@@ -163,8 +163,8 @@ export const scheduleData = {
     // ENB 109
     {
       id: "17",
-      title: "Get a professional headshot taken for LinkedIn or your portfolio",
-      speaker: "Professional Headshots",
+      title: "Professional Headshots",
+      speaker: "Get a professional headshot taken for LinkedIn or your portfolio",
       start: "14:00",
       end: "17:00",
       roomId: "r3",
@@ -172,8 +172,8 @@ export const scheduleData = {
     },
     {
       id: "18",
-      title: "Network with companies and local tech community representatives; explore new opportunities",
-      speaker: "Tabling",
+      title: "Tabling",
+      speaker: "Network with Verizon, Couchbase, Iron EagleX & local tech community representatives; explore new opportunities",
       start: "14:30",
       end: "15:30",
       roomId: "r3",

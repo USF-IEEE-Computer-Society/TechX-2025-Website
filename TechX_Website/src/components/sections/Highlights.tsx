@@ -65,8 +65,6 @@ export default function Highlights(){
 
             </div>
 
-            <h2 className={"mb-10 text-center font-bold text-2xl"}>More speakers joining soon!</h2>
-
         </div>
     )
 }

@@ -185,9 +185,9 @@ const SessionCard: React.FC<{
   totalColumns?: number;
 }> = ({ s, startHour, pixelsPerHour, column = 0, totalColumns = 1 }) => {
   const pill =
-    s.type === "Workshop" ? "bg-blue-100 text-blue-800" :
+    s.type === "Workshop" ? "bg-orange-100 text-orange-800" :
     s.type === "Panel" ? "bg-purple-100 text-purple-800" :
-    s.type === "Break" ? "bg-amber-100 text-amber-800" : "bg-emerald-100 text-emerald-800";
+    s.type === "Break" ? "bg-blue-100 text-blue-800" : "bg-emerald-100 text-emerald-800";
   
   const startPos = getTimePosition(s.start, startHour, pixelsPerHour);
   const endPos = getTimePosition(s.end, startHour, pixelsPerHour);
@@ -209,8 +209,8 @@ const SessionCard: React.FC<{
       }}
       className="rounded-lg border-2 border-gray-300 p-1.5 shadow-sm bg-white cursor-pointer hover:shadow-md transition-shadow"
     >
-      {s.speaker && <div className="text-[10px] sm:text-base font-semibold leading-tight">{s.speaker}</div>}
-      <div className="text-[9px] sm:text-sm text-gray-600 mt-0.5">{s.title}</div>
+      {s.speaker && <div className="text-[10px] sm:text-base font-medium leading-tight">{s.title}</div>}
+      <div className="text-[9px] sm:text-sm text-gray-600 mt-0.5">{s.speaker}</div>
       <div className="flex items-center gap-1 mt-0.5 flex-wrap">
         <div className={`inline-flex px-1 py-0.5 text-[8px] sm:text-[9px] rounded-full ${pill}`}>{s.type ?? "Talk"}</div>
         <div className="text-[8px] sm:text-[11px] text-gray-500">
@@ -358,7 +358,7 @@ const TimeColumn: React.FC<{ startHour: number; endHour: number; pixelsPerHour: 
           <div
             key={hour}
             style={{ top: `${i * pixelsPerHour}px` }}
-            className="absolute right-1 lg:right-2 -translate-y-9 md:-translate-y-2 text-[10px] sm:text-xs text-gray-500 font-medium"
+            className="absolute right-1 lg:right-2 -translate-y-9 md:-translate-y-11 text-[10px] sm:text-xs text-gray-500 font-medium"
           >
             {formatHour12(hour)}
           </div>
@@ -371,9 +371,9 @@ const TimeColumn: React.FC<{ startHour: number; endHour: number; pixelsPerHour: 
 type ViewMode = 'pair1' | 'pair2';
 
 export default function ConferenceScheduler() {
-  const START_HOUR = 10;
-  const END_HOUR = 18;
-  const PIXELS_PER_HOUR = 200;
+  const START_HOUR = 11;
+  const END_HOUR = 17;
+  const PIXELS_PER_HOUR = 230;
   const MOBILE_PIXELS_PER_HOUR = 220;
   const [viewMode, setViewMode] = useState<ViewMode>('pair1');
 
@@ -410,7 +410,7 @@ export default function ConferenceScheduler() {
   }, [desktopDisplayedRoomIds]);
 
   return (
-    <div className="max-w-[1800px] mx-auto">
+    <div className="max-w-[1800px] mx-auto mb-10">
       {/* Mobile: Fixed header and view selector */}
       <div className="lg:hidden sticky top-0 z-50 bg-white border-b border-gray-200 pb-3">
 
@@ -457,7 +457,11 @@ export default function ConferenceScheduler() {
       {/* Mobile: Dynamic room view (always two rooms) */}
       <div className={`lg:hidden px-3 pt-3 overflow-y-auto max-h-[600px] border-2 border-gray-200 rounded-lg mx-3 shadow-sm`}>
         <div className={`relative`}>
-          <div className={`grid gap-2 grid-cols-[20px_1fr_1fr]`}>
+          <div className={`grid gap-1 ${
+            viewMode === 'pair2'
+              ? 'grid-cols-[20px_1.25fr_0.75fr]'
+              : 'grid-cols-[20px_1fr_1fr]'
+          }`}>
             <TimeColumn startHour={START_HOUR} endHour={END_HOUR} pixelsPerHour={MOBILE_PIXELS_PER_HOUR} />
             {displayedRooms.map((room) => (
               <div key={room.id}>

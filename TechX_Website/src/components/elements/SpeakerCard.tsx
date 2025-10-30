@@ -25,7 +25,7 @@ export default function SpeakerCard(props: SpeakerCardProps) {
                 <p className={"w-[90%] text-md md:text-xl text-gray-600 mt-3"}>{props.talkTitle}</p>
 
 
-                    <div className={"flex flex-col gap-2 mt-3 mb-3 text-sm pr-[1rem]"}>
+                    <div className={`flex ${props.pills.includes("Tabling") ? "flex-row" : "flex-col"} gap-2 mt-3 mb-3 text-sm pr-[1rem]`}>
 
                         {props.pills.includes("Speaker") ?
                             <span className="Pill bg-green-100 text-green-800">Speaker</span> : null}
@@ -37,6 +37,10 @@ export default function SpeakerCard(props: SpeakerCardProps) {
                             className={"Pill bg-purple-100 text-purple-800"}>"Careers in Tech" Panel Moderator</span> : null}
                         {props.pills.includes("Workshop") ?
                             <span className={"Pill bg-orange-100 text-orange-800 "}>Workshop</span> : null}
+
+                        {props.pills.includes("Tabling") ? <span className={"Pill bg-gray-200 text-gray-800"}>Tabling</span> : null}
+
+
 
 
                     </div>
