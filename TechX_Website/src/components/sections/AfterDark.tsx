@@ -5,7 +5,7 @@ import { afterDarkCards } from "../../data/afterDarkData";
 export default function AfterDark(){
 
     return (
-        <div id={'AfterDark'} className={"w-full h-auto bg-[#0a0e27] flex flex-col items-center pb-[3rem] p-[1rem] overflow-hidden"}>
+        <div id='AfterDark' className={"w-full h-auto bg-[#0a0e27] flex flex-col items-center pb-[3rem] p-[1rem] overflow-hidden"}>
             <div className={"w-full flex flex-col justify-center items-center mb-10 -mt-15"}>
 
 
@@ -58,7 +58,7 @@ export default function AfterDark(){
             <a className={"hover:scale-110 duration-300 ease-in-out cursor-pointer mt-10"}
                href="https://events.vtools.ieee.org/m/511760" target="_blank"
                rel="noopener noreferrer">
-                <button id="SignUpAsUSF" className={"w-[16rem] h-[4.25rem] bg-[#FFA300] rounded cursor-pointer"}>
+                <button id="SignUpForAfterDark" className={"w-[16rem] h-[4.25rem] bg-[#FFA300] rounded cursor-pointer"}>
                     <h2 className={"text-base font-bold text-black text-balance text-center"}>Sign Up for TechX After Dark</h2>
                 </button>
             </a>
