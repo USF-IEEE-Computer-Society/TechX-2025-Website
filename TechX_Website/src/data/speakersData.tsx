@@ -11,6 +11,7 @@ import sutapimg from "../assets/speakers/sutap.png";
 import michael from "../assets/speakers/michael.png";
 import mrunalimg from "../assets/speakers/mrunal.png";
 import israelImg from "../assets/speakers/israel.png";
+import joeyImg from "../assets/speakers/joey.png";
 
 
 export const speakersData = [
@@ -52,7 +53,7 @@ export const speakersData = [
         talkTitle: "Bridging the Gap Between Black Box Models and Business Risk: Explainable AI in Regulated Industries",
         headshot: mrunalimg,
         linkedinLink: "https://www.linkedin.com/in/mrunal-gangrade-8087121b5/",
-        pills:["Speaker","Tabling"]
+        pills:["Speaker"]
     },
     {
         name: "Anna Bakhvalova",
@@ -79,11 +80,11 @@ export const speakersData = [
         pills:["Speaker"]
     },
     {
-        name: "Lenar Mukhamadiev",
-        company: "Idelsoft",
+        name: "Joey de Villa",
+        company: "Kforce Inc",
         talkTitle: "",
-        headshot: lenarImg,
-        linkedinLink: "https://www.linkedin.com/in/lenarm/",
+        headshot: joeyImg,
+        linkedinLink: "https://www.linkedin.com/in/joeydevilla/",
         pills:["Panel"]
     },
     {

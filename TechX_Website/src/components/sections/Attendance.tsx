@@ -52,7 +52,7 @@ export default function WhyAttend(){
                         <Check className={"WhyAttendIcons"} color={"#00629B"} strokeWidth={1} size={40}/>
                     </div>
 
-                    <h2 className={"text-2xl md:text-5xl lg:text-3xl xl:text-4xl tracking-tight font-bold"}> 7 tabling
+                    <h2 className={"text-2xl md:text-5xl lg:text-3xl xl:text-4xl tracking-tight font-bold"}> 7+ tabling
                         opportunities </h2>
                     <p className={"w-[85%] text-lg md:text-2xl text-gray-600 text-center text-balance"}> Network with
                         local companies, startups and communinities popular in Tampa Bay.</p>

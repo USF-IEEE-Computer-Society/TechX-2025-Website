@@ -5,6 +5,7 @@ import isacaImg from "../../../src/assets/companies/ISACA_logo_WestFlorida_RGB.p
 import CouchBaseImg from "../../../src/assets/companies/Couchbase_Logo.jpg"
 import USFITImg from "../../../src/assets/companies/information-technology-lightbg-2c-rgb-h.png"
 import uberaiImg from "../../../src/assets/companies/uberai.jpg"
+import icode from "../../../src/assets/companies/icode.png"
 
 
 export default function Companies(){
@@ -17,7 +18,7 @@ export default function Companies(){
                     with the companies tabling and showcasing opportunities at TechX Florida 2025</p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-12 place-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-12 place-items-center">
 
                 <a href="https://ironeaglex.com" target="_blank" rel="noopener noreferrer">
                     <img src={iexImg} className="h-16 md:h-32" loading="lazy"/>
@@ -38,14 +39,18 @@ export default function Companies(){
                 <a href="https://www.uber.com/us/en/ai-solutions/" target="_blank" rel="noopener noreferrer">
                     <img src={uberaiImg} className="h-16 md:h-32" loading="lazy"/>
                 </a>
+                <a href="https://icodeschool.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={icode} className="h-16 md:h-32" loading="lazy"/>
+                </a>
+                <a href="https://www.tampadevs.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={tampadevsImg} className="h-16 md:h-32 mt-5" loading="lazy"/>
+            </a>
 
 
 
             </div>
 
-            <a href="https://www.tampadevs.com/" target="_blank" rel="noopener noreferrer">
-                    <img src={tampadevsImg} className="h-16 md:h-32 mt-5" loading="lazy"/>
-            </a>
+
 
         </div>
     )

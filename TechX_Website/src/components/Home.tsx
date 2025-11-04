@@ -10,6 +10,7 @@ import IEEE from "./sections/IEEE";
 import Companies from "./sections/Companies";
 import Photos from "./sections/Photos";
 import Team from "./sections/Team";
+import AfterDark from "./sections/AfterDark";
 
 function Home() {
   return (
@@ -22,8 +23,11 @@ function Home() {
       <Whatsapp/>
       <IEEE/>
         <Companies/>
+        <AfterDark/>
         <Team/>
+
         <Photos/>
+
       <FAQ/>
     </>
   )

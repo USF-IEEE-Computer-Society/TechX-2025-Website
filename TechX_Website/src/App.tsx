@@ -6,7 +6,7 @@ import Team from './components/sections/Team'
 import NotFound from './components/NotFound'
 import Navbar from './components/sections/Navbar'
 import Footer from './components/sections/Footer'
-
+import AfterDark from './components/sections/AfterDark'
 function App() {
   return (
     <Router>
@@ -16,6 +16,7 @@ function App() {
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/team" element={<Team />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/afterdark" element={<AfterDark />} />
       </Routes>
         <Footer/>
 
