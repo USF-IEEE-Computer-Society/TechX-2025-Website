@@ -16,22 +16,28 @@ export default function IEEE(){
                 <p className={"w-[90%] text-md md:text-2xl text-ellipsis text-gray-600 text-center text-pretty"}> The world’s largest technical professional organization </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-7 place-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 place-items-center">
 
-                <img src={ieee} className="h-16 md:h-32" loading="lazy"/>
-                <img src={ieeeyp} className="h-16 md:h-32" loading="lazy"/>
-                <img src={ieeeypr3} className="h-16 md:h-32" loading="lazy"/>
-                <img src={ieeecs} className="h-16 md:h-32" loading="lazy"/>
-                <img src={ieeecssyp} className="h-16 md:h-32" loading="lazy"/>
-                <img src={ieeecsfwcs} className="h-16 md:h-32" loading="lazy"/>
+                {/* upper deck */}
+                <img src={ieee} className="h-16 md:h-32" loading="lazy" />
+                <img src={ieeeyp} className="h-16 md:h-32" loading="lazy" />
+                <img src={ieeeypr3} className="h-16 md:h-32" loading="lazy" />
+                <img src={ieeecs} className="h-16 md:h-32" loading="lazy" />
 
+                {/* lower deck - mobile */}
+                <img src={ieeecssyp} className="h-16 md:hidden" loading="lazy" />
+                <img src={ieeecsfwcs} className="h-16 md:hidden" loading="lazy" />
+                <img src={ieeecsusf} className="h-16 md:hidden col-span-2" loading="lazy" />
 
-
-
-
+                {/* lower deck - desktop */}
+                <div className="hidden md:flex md:col-span-4 justify-center gap-10">
+                    <img src={ieeecssyp} className="h-32" loading="lazy" />
+                    <img src={ieeecsfwcs} className="h-32" loading="lazy" />
+                    <img src={ieeecsusf} className="h-32" loading="lazy" />
+                </div>
             </div>
             <div className="flex justify-center items-center mt-7">
-                <img src={ieeecsusf} className="h-16 md:h-32" loading="lazy"/>
+                
             </div>
 
 

@@ -13,7 +13,9 @@ export default function AfterDark(){
                         <div className="flex md:flex-row flex-col items-center gap-0 md:gap-10">
                             <div className="h-[100px] md:h-auto">
                                 <span className="neon-text-purple" style={{position: "relative", left: "0.14em"}}>T</span>
-                                <span className="neon-text-purple">echX</span>
+                                <span className="neon-text-purple">ech</span>
+                                <span className="neon-text-purple" style={{position: "relative", left: "-0.06em"}}>X</span>
+
                             </div>
                             <div>
                                  <span>After Dark</span>
@@ -27,7 +29,7 @@ export default function AfterDark(){
                 <p className={"w-[90%] text-md md:text-2xl text-ellipsis text-gray-300 text-center text-pretty -m-8 md:-m-18"}> Social & Fundraising event with no agenda right after TechX Florida 2025 </p>
             </div>
 
-
+            
             <div className="flex flex-col md:flex-row gap-3 md:mt-15 mt-5 hidden md:flex">
                 <AfterDarkInfoCard text="November 8, 2025" />
                 <AfterDarkInfoCard text="6 PM - 8 PM" />

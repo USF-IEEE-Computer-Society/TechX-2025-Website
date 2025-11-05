@@ -6,14 +6,14 @@ export interface AfterDarkCardData {
 export const afterDarkCards: AfterDarkCardData[] = [
     {
         header: "Appetizers included",
-        subheader: "Paid cash bar for alcoholic & non-alcoholic drinks"
+        subheader: "Cash bar for alcoholic & non-alcoholic drinks"
     },
     {
-        header: "Connecting",
+        header: "Connections",
         subheader: "Networking with students, professionals, speakers & TechX organizers"
     },
     {
-        header: "Paid admission",
+        header: "Admission",
         subheader: "IEEE-CS free; non-members: students $10, professionals $20 (pay at door with cash or Venmo)"
     },
     {
