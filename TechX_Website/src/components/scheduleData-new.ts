@@ -26,7 +26,7 @@ export const scheduleData = {
       speaker: "Mrinal Karvir",
       start: "11:50",
       end: "12:30",
-      roomId: "r1",
+      roomId: "r2",
       type: "Talk",
     },
     {
@@ -82,7 +82,7 @@ export const scheduleData = {
       speaker: "Israel Vega",
       start: "11:50",
       end: "12:30",
-      roomId: "r2",
+      roomId: "r1",
       type: "Talk",
     },
     {

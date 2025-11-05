@@ -37,7 +37,7 @@ export const speakersData = [
         talkTitle: "The Last Mile of Generative AI: Turning Ideas into Impact at Enterprise Scale",
         headshot: mrinalImg,
         linkedinLink: "https://www.linkedin.com/in/mrinalkarvir/",
-        pills:["Speaker", "Panel", "IEEECS"]
+        pills:["Speaker", "IEEECS"]
     },
     {
         name: "Subhajit Paul",
@@ -53,7 +53,7 @@ export const speakersData = [
         talkTitle: "Bridging the Gap Between Black Box Models and Business Risk: Explainable AI in Regulated Industries",
         headshot: mrunalimg,
         linkedinLink: "https://www.linkedin.com/in/mrunal-gangrade-8087121b5/",
-        pills:["Speaker"]
+        pills:["Speaker","Panel"]
     },
     {
         name: "Anna Bakhvalova",
