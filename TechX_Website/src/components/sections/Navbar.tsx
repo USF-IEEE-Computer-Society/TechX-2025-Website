@@ -9,7 +9,7 @@ export default function Navbar(){
     return (
         <div className={'relative'}>
 
-            <nav className="w-full flex flex-col-reverse md:flex-row items-center justify-between md:px-30 py-5 bg-white shadow gap-7">
+            <nav className="w-full flex flex-col-reverse md:flex-row items-center justify-between md:px-30 py-5 bg-white shadow gap-2">
 
                 <div className="flex items-center gap-6 text-2xl underline decoration-1 font-bold">
 
