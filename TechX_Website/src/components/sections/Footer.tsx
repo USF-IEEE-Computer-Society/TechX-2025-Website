@@ -46,7 +46,6 @@ export default function Footer(){
 
             </div>
 
-            <hr className={"w-[80%] h-[1px] bg-[#C9C9C9] mt-[3rem]"}/>
 
             <h2 className={"w-[100%] text-lg text-[#C9C9C9] text-center text-balance mt-[2rem]"}> © 2025 TechX Florida. All rights reserved. No commercial use without permission. </h2>
 
