@@ -12,10 +12,10 @@ export type Session = {
 
 export const scheduleData = {
   rooms: [
-    { id: "r1", name: "ENB 118" },
-    { id: "r2", name: "ENB 116" },
+    { id: "r1", name: "ENB 118 Room" },
+    { id: "r2", name: "ENB 116 Room" },
     { id: "r3", name: "Hall of Flags" },
-    { id: "r4", name: "ENB 109" },
+    { id: "r4", name: "ENB 109 Room" },
   ] as Room[],
 
   sessions: [
