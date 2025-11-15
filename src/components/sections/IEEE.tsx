@@ -1,10 +1,11 @@
-import ieeecsfwcs from '../../assets/logos/ieee-cs-fwcs.png'
+import ieeecsfwcs from '../../assets/logos/ieee-cs-fwcs.webp'
 import ieeecs from '../../assets/logos/ieee-cs-logo.webp'
-import ieeecssyp from '../../assets/logos/ieee-cs-syp.png'
-import ieeecsusf from '../../assets/logos/ieee-cs-usf-orange.png'
-import ieee from '../../assets/logos/IEEE-Logo.jpg'
-import ieeeypr3 from '../../assets/logos/ieee_yp_region3.png'
-import ieeeyp from '../../assets/logos/ieee-yp.png'
+import ieeecssyp from '../../assets/logos/ieee-cs-syp.webp'
+import ieeecsusf from '../../assets/logos/ieee-cs-usf-orange.webp'
+import ieee from '../../assets/logos/IEEE-Logo.webp'
+import ieeeypr3 from '../../assets/logos/ieee_yp_region3.webp'
+import ieeeyp from '../../assets/logos/ieee-yp.webp'
+import LazyImage from '../elements/LazyImage'
 
 export default function IEEE() {
   return (
@@ -19,21 +20,21 @@ export default function IEEE() {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 place-items-center">
         {/* upper deck */}
-        <img src={ieee} className="h-16 md:h-32" loading="lazy" />
-        <img src={ieeeyp} className="h-16 md:h-32" loading="lazy" />
-        <img src={ieeeypr3} className="h-16 md:h-32" loading="lazy" />
-        <img src={ieeecs} className="h-16 md:h-32" loading="lazy" />
+        <LazyImage src={ieee} alt="IEEE Logo" className="h-16 md:h-32" />
+        <LazyImage src={ieeeyp} alt="IEEE Young Professionals Logo" className="h-16 md:h-32" />
+        <LazyImage src={ieeeypr3} alt="IEEE Young Professionals Region 3 Logo" className="h-16 md:h-32" />
+        <LazyImage src={ieeecs} alt="IEEE Computer Society Logo" className="h-16 md:h-32" />
 
         {/* lower deck - mobile */}
-        <img src={ieeecssyp} className="h-16 md:hidden" loading="lazy" />
-        <img src={ieeecsfwcs} className="h-16 md:hidden" loading="lazy" />
-        <img src={ieeecsusf} className="h-16 md:hidden col-span-2" loading="lazy" />
+        <LazyImage src={ieeecssyp} alt="IEEE CS SYP Logo" className="h-16 md:hidden" />
+        <LazyImage src={ieeecsfwcs} alt="IEEE CS FWCS Logo" className="h-16 md:hidden" />
+        <LazyImage src={ieeecsusf} alt="IEEE CS USF Logo" className="h-16 md:hidden col-span-2" />
 
         {/* lower deck - desktop */}
         <div className="hidden md:flex md:col-span-4 justify-center gap-10">
-          <img src={ieeecssyp} className="h-32" loading="lazy" />
-          <img src={ieeecsfwcs} className="h-32" loading="lazy" />
-          <img src={ieeecsusf} className="h-32" loading="lazy" />
+          <LazyImage src={ieeecssyp} alt="IEEE CS SYP Logo" className="h-32" />
+          <LazyImage src={ieeecsfwcs} alt="IEEE CS FWCS Logo" className="h-32" />
+          <LazyImage src={ieeecsusf} alt="IEEE CS USF Logo" className="h-32" />
         </div>
       </div>
       <div className="flex justify-center items-center mt-7"></div>

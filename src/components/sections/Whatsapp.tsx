@@ -1,4 +1,4 @@
-import gbm from '../../assets/gbm.png'
+import gbm from '../../assets/gbm.webp'
 
 export default function Whatsapp() {
   return (

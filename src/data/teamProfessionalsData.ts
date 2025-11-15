@@ -1,8 +1,8 @@
-import andyImg from '../assets/team/andy.png'
-import antraImg from '../assets/speakers/antra.png'
-import annaImg from '../assets/speakers/anna.png'
-import anneImg from '../assets/team/anne.jpg'
-import sashaImg from '../assets/team/sasha.jpg'
+import andyImg from '../assets/team/andy.webp'
+import antraImg from '../assets/speakers/antra.webp'
+import annaImg from '../assets/speakers/anna.webp'
+import anneImg from '../assets/team/anne.webp'
+import sashaImg from '../assets/team/sasha.webp'
 
 export const teamProfessionsData = [
   {

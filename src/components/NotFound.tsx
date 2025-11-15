@@ -1,4 +1,4 @@
-import catNerd from '../assets/cats/nerd.jpeg'
+import catNerd from '../assets/nerd.webp'
 
 function NotFound() {
   return (

@@ -1,6 +1,7 @@
 import logo from '../../assets/logos/logoTechX.webp'
-import ieeecsusf from '../../assets/logos/ieee-cs-usf-orange.png'
+import ieeecsusf from '../../assets/logos/ieee-cs-usf-orange.webp'
 import { Link } from 'react-router-dom'
+import LazyImage from '../elements/LazyImage'
 
 export default function Navbar() {
   return (
@@ -21,9 +22,9 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-0 md:gap-6 md:pr-2">
-          <img src={logo} alt="TechX 2025 Logo" className="h-17 md:h-[4.5rem]" />
+          <LazyImage src={logo} alt="TechX 2025 Logo" className="h-17 md:h-[4.5rem]" />
           <a href="https://bullsconnect.usf.edu/ieeecs/home" target="_blank" rel="noopener noreferrer">
-            <img src={ieeecsusf} alt="IEEE CS Logo" className="hidden h-10 md:block md:h-[4.5rem]" />
+            <LazyImage src={ieeecsusf} alt="IEEE CS Logo" className="hidden h-10 md:block md:h-[4.5rem]" />
           </a>
         </div>
       </nav>

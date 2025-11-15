@@ -1,12 +1,13 @@
-import iexImg from '../../../src/assets/companies/IEX_GDIT_black.png'
-import verizonImg from '../../../src/assets/companies/Verizon_GlowWordmark_RGB_2025.jpg'
+import iexImg from '../../../src/assets/companies/IEX_GDIT_black.webp'
+import verizonImg from '../../../src/assets/companies/Verizon_GlowWordmark_RGB_2025.webp'
 import tampadevsImg from '../../../src/assets/companies/tampa-devs logo.svg'
-import isacaImg from '../../../src/assets/companies/ISACA_logo_WestFlorida_RGB.png'
-import CouchBaseImg from '../../../src/assets/companies/Couchbase_Logo.jpg'
-import USFITImg from '../../../src/assets/companies/information-technology-lightbg-2c-rgb-h.png'
-import uberaiImg from '../../../src/assets/companies/uberai.jpg'
-import icode from '../../../src/assets/companies/icode.png'
-import java from '../../../src/assets/companies/java.png'
+import isacaImg from '../../../src/assets/companies/ISACA_logo_WestFlorida_RGB.webp'
+import CouchBaseImg from '../../../src/assets/companies/Couchbase_Logo.webp'
+import USFITImg from '../../../src/assets/companies/information-technology-lightbg-2c-rgb-h.webp'
+import uberaiImg from '../../../src/assets/companies/uberai.webp'
+import icode from '../../../src/assets/companies/icode.webp'
+import java from '../../../src/assets/companies/java.webp'
+import LazyImage from '../elements/LazyImage'
 
 export default function Companies() {
   return (
@@ -23,76 +24,76 @@ export default function Companies() {
 
       <div className="grid grid-cols-2 md:grid-cols-4 md:gap-y-12 md:gap-x-8 gap-y-8 gap-x-5 place-items-center block md:hidden">
         <a href="https://ironeaglex.com" target="_blank" rel="noopener noreferrer">
-          <img src={iexImg} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={iexImg} alt="Iron Eagle X Logo" className="h-16 md:h-32" />
         </a>
         <a href="https://www.verizon.com" target="_blank" rel="noopener noreferrer">
-          <img src={verizonImg} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={verizonImg} alt="Verizon Logo" className="h-16 md:h-32" />
         </a>
 
         <a href="https://www.westfloridaisaca.org/" target="_blank" rel="noopener noreferrer">
-          <img src={isacaImg} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={isacaImg} alt="ISACA West Florida Logo" className="h-16 md:h-32" />
         </a>
         <a href="https://www.couchbase.com/" target="_blank" rel="noopener noreferrer">
-          <img src={CouchBaseImg} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={CouchBaseImg} alt="Couchbase Logo" className="h-16 md:h-32" />
         </a>
         <a href="https://www.usf.edu/it/" target="_blank" rel="noopener noreferrer">
-          <img src={USFITImg} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={USFITImg} alt="USF IT Logo" className="h-16 md:h-32" />
         </a>
         <a href="https://icodeschool.com/" target="_blank" rel="noopener noreferrer">
-          <img src={icode} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={icode} alt="iCode Logo" className="h-16 md:h-32" />
         </a>
 
         <a href="https://www.tampajug.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
-          <img src={java} className="h-16 md:h-32 object-contain" loading="lazy" />
+          <LazyImage src={java} alt="Tampa Java Users Group Logo" className="h-16 md:h-32 object-contain" />
         </a>
 
         <a href="https://www.uber.com/us/en/ai-solutions/" target="_blank" rel="noopener noreferrer">
-          <img src={uberaiImg} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={uberaiImg} alt="Uber AI Logo" className="h-16 md:h-32" />
         </a>
       </div>
 
       <div className="block md:hidden items-center justify-center mt-8">
         <a href="https://www.tampadevs.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
-          <img src={tampadevsImg} className="h-16 md:h-32 object-contain" loading="lazy" />
+          <LazyImage src={tampadevsImg} alt="Tampa Devs Logo" className="h-16 md:h-32 object-contain" />
         </a>
       </div>
 
       <div className="md:flex md:flex-row md:gap-y-12 md:gap-x-8 hidden md:block mb-10">
         <a href="https://ironeaglex.com" target="_blank" rel="noopener noreferrer">
-          <img src={iexImg} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={iexImg} alt="Iron Eagle X Logo" className="h-16 md:h-32" />
         </a>
         <a href="https://www.verizon.com" target="_blank" rel="noopener noreferrer">
-          <img src={verizonImg} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={verizonImg} alt="Verizon Logo" className="h-16 md:h-32" />
         </a>
 
         <a href="https://www.westfloridaisaca.org/" target="_blank" rel="noopener noreferrer">
-          <img src={isacaImg} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={isacaImg} alt="ISACA West Florida Logo" className="h-16 md:h-32" />
         </a>
         <a href="https://www.couchbase.com/" target="_blank" rel="noopener noreferrer">
-          <img src={CouchBaseImg} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={CouchBaseImg} alt="Couchbase Logo" className="h-16 md:h-32" />
         </a>
       </div>
 
       <div className="md:flex md:flex-row md:gap-y-12 md:gap-x-8 hidden md:block mb-10">
         <a href="https://www.usf.edu/it/" target="_blank" rel="noopener noreferrer">
-          <img src={USFITImg} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={USFITImg} alt="USF IT Logo" className="h-16 md:h-32" />
         </a>
         <a href="https://icodeschool.com/" target="_blank" rel="noopener noreferrer">
-          <img src={icode} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={icode} alt="iCode Logo" className="h-16 md:h-32" />
         </a>
 
         <a href="https://www.tampajug.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
-          <img src={java} className="h-16 md:h-32 object-contain" loading="lazy" />
+          <LazyImage src={java} alt="Tampa Java Users Group Logo" className="h-16 md:h-32 object-contain" />
         </a>
       </div>
 
       <div className="md:flex md:flex-row md:gap-y-12 md:gap-x-8 hidden md:block">
         <a href="https://www.tampadevs.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
-          <img src={tampadevsImg} className="h-16 md:h-32 object-contain" loading="lazy" />
+          <LazyImage src={tampadevsImg} alt="Tampa Devs Logo" className="h-16 md:h-32 object-contain" />
         </a>
 
         <a href="https://www.uber.com/us/en/ai-solutions/" target="_blank" rel="noopener noreferrer">
-          <img src={uberaiImg} className="h-16 md:h-32" loading="lazy" />
+          <LazyImage src={uberaiImg} alt="Uber AI Logo" className="h-16 md:h-32" />
         </a>
       </div>
     </div>
