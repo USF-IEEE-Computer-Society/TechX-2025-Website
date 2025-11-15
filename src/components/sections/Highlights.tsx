@@ -47,11 +47,7 @@ export default function Highlights() {
       </div>
 
       {/* Tablet and Desktop layout: Grid */}
-      <div
-        className={
-          'hidden md:grid w-full mt-4 gap-[1rem] pb-[1rem] justify-items-center grid-cols-3 lg:grid-cols-5 p-[1rem] lg:p-[4rem]'
-        }
-      >
+      <div className={'hidden md:grid w-full mt-4 gap-[1rem] pb-[1rem] justify-items-center grid-cols-3 lg:grid-cols-5 p-[1rem] lg:p-[4rem]'}>
         {speakersData.map((s, i) => (
           <SpeakerCard
             key={i}

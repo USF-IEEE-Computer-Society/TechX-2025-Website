@@ -22,9 +22,7 @@ function Home() {
       <Companies />
       <AfterDark />
       <Team />
-
       <Photos />
-
       <FAQ />
     </>
   )

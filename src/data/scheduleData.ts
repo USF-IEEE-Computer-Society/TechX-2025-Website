@@ -58,8 +58,7 @@ export const scheduleData = {
     },
     {
       id: '5',
-      title:
-        'Bridging the Gap Between Black Box Models and Business Risk: Explainable AI in Regulated Industries',
+      title: 'Bridging the Gap Between Black Box Models and Business Risk: Explainable AI in Regulated Industries',
       speaker: 'Mrunal Gangrade',
       start: '15:40',
       end: '16:10',
@@ -69,8 +68,7 @@ export const scheduleData = {
     {
       id: '6',
       title: 'Careers in Tech Panel',
-      speaker:
-        'Moderated panel on career paths, hiring expectations, and practical advice for early-career engineers',
+      speaker: 'Moderated panel on career paths, hiring expectations, and practical advice for early-career engineers',
       start: '16:15',
       end: '17:00',
       roomId: 'r1',
@@ -146,8 +144,7 @@ export const scheduleData = {
     {
       id: '15',
       title: 'Tabling',
-      speaker:
-        'Network with Verizon, Couchbase, Iron EagleX & local tech community representatives; explore new opportunities',
+      speaker: 'Network with Verizon, Couchbase, Iron EagleX & local tech community representatives; explore new opportunities',
       start: '11:00',
       end: '13:30',
       roomId: 'r3',
@@ -176,8 +173,7 @@ export const scheduleData = {
     {
       id: '18',
       title: 'Tabling',
-      speaker:
-        'Network with Verizon, Couchbase, Iron EagleX & local tech community representatives; explore new opportunities',
+      speaker: 'Network with Verizon, Couchbase, Iron EagleX & local tech community representatives; explore new opportunities',
       start: '14:30',
       end: '15:30',
       roomId: 'r3',

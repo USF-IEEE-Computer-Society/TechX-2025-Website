@@ -2,11 +2,7 @@ export default function Footer() {
   return (
     <div className={'w-full h-auto pb-[3rem] bg-[#101724] flex flex-col items-center'}>
       <div className={'w-[50%] flex justify-center items-center pt-[2rem] gap-[2rem]'}>
-        <a
-          href="mailto:akurnikova@usf.edu?subject=Inquiry%20from%20Website"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="mailto:akurnikova@usf.edu?subject=Inquiry%20from%20Website" target="_blank" rel="noopener noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -43,11 +39,7 @@ export default function Footer() {
           </svg>
         </a>
 
-        <a
-          href="https://www.linkedin.com/company/ieee-cs-at-usf/posts/?feedView=all"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://www.linkedin.com/company/ieee-cs-at-usf/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -67,14 +59,7 @@ export default function Footer() {
         </a>
 
         <a href="https://linktr.ee/ieeecsusf" target="_blank" rel="noopener noreferrer">
-          <svg
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            id="Linktree--Streamline-Simple-Icons"
-            height="24"
-            width="24"
-          >
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Linktree--Streamline-Simple-Icons" height="24" width="24">
             <desc>Linktree Streamline Icon: https://streamlinehq.com </desc>
             <title>Linktree</title>
             <path

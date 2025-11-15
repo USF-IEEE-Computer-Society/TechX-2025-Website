@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react'
-import { scheduleData, type Room, type Session } from './scheduleData-new'
+import { scheduleData, type Room, type Session } from '../data/scheduleData'
 
 // Convert "HH:MM" time string to ISO date string
 const timeToISO = (timeStr: string): string => {
@@ -111,9 +111,7 @@ type SessionLayout = {
 // Helper to detect overlapping sessions and calculate layout
 const calculateSessionLayout = (sessions: Session[]): SessionLayout[] => {
   const layouts: SessionLayout[] = []
-  const sortedSessions = [...sessions].sort(
-    (a, b) => new Date(a.start).getTime() - new Date(b.start).getTime()
-  )
+  const sortedSessions = [...sessions].sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime())
 
   // Track which column each session is in and which columns are occupied at what times
   const columnAssignments = new Map<string, number>()
@@ -132,9 +130,7 @@ const calculateSessionLayout = (sessions: Session[]): SessionLayout[] => {
     })
 
     // Find the first available column
-    const occupiedColumns = new Set(
-      overlapping.filter(s => columnAssignments.has(s.id)).map(s => columnAssignments.get(s.id)!)
-    )
+    const occupiedColumns = new Set(overlapping.filter(s => columnAssignments.has(s.id)).map(s => columnAssignments.get(s.id)!))
 
     let column = 0
     while (occupiedColumns.has(column)) {
@@ -218,9 +214,7 @@ const SessionCard: React.FC<{
       {s.speaker && <div className="text-[10px] sm:text-base font-medium leading-tight">{s.title}</div>}
       <div className="text-[9px] sm:text-sm text-gray-600 mt-0.5">{s.speaker}</div>
       <div className="flex items-center gap-1 mt-0.5 flex-wrap">
-        <div className={`inline-flex px-1 py-0.5 text-[8px] sm:text-[9px] rounded-full ${pill}`}>
-          {s.type ?? 'Talk'}
-        </div>
+        <div className={`inline-flex px-1 py-0.5 text-[8px] sm:text-[9px] rounded-full ${pill}`}>{s.type ?? 'Talk'}</div>
         <div className="text-[8px] sm:text-[11px] text-gray-500">
           {formatTime12Hour(s.start)}–{formatTime12Hour(s.end)}
         </div>
@@ -275,14 +269,10 @@ const MergedSessionCard: React.FC<{
         }}
         className="rounded-lg border-2 border-gray-300 p-1.5 shadow-sm bg-white cursor-pointer hover:shadow-md transition-shadow flex flex-col items-center justify-center text-center"
       >
-        {session.speaker && (
-          <div className="text-[10px] sm:text-xs font-semibold leading-tight">{session.speaker}</div>
-        )}
+        {session.speaker && <div className="text-[10px] sm:text-xs font-semibold leading-tight">{session.speaker}</div>}
         <div className="text-[9px] sm:text-[10px] text-gray-600 mt-0.5 line-clamp-2">{session.title}</div>
         <div className="flex items-center justify-center gap-1 mt-0.5 flex-wrap">
-          <div className={`inline-flex px-1 py-0.5 text-[8px] sm:text-[9px] rounded-full ${pill}`}>
-            {session.type ?? 'Talk'}
-          </div>
+          <div className={`inline-flex px-1 py-0.5 text-[8px] sm:text-[9px] rounded-full ${pill}`}>{session.type ?? 'Talk'}</div>
           <div className="text-[8px] sm:text-[9px] text-gray-500">
             {formatTime12Hour(session.start)}–{formatTime12Hour(session.end)}
           </div>
@@ -317,20 +307,11 @@ const RoomColumn: React.FC<{
 
   return (
     <div className="flex flex-col">
-      {showHeader && (
-        <div className="font-semibold mb-2 text-lg sm:text-xl lg:text-2xl px-2 text-center">{room.name}</div>
-      )}
-      <div
-        style={{ height: `${totalHeight}px` }}
-        className="relative rounded-lg border-2 border-gray-200 bg-white"
-      >
+      {showHeader && <div className="font-semibold mb-2 text-lg sm:text-xl lg:text-2xl px-2 text-center">{room.name}</div>}
+      <div style={{ height: `${totalHeight}px` }} className="relative rounded-lg border-2 border-gray-200 bg-white">
         {/* Hour grid lines */}
         {hours.map((hour, i) => (
-          <div
-            key={hour}
-            style={{ top: `${i * pixelsPerHour}px` }}
-            className="absolute left-0 right-0 border-t border-gray-200"
-          />
+          <div key={hour} style={{ top: `${i * pixelsPerHour}px` }} className="absolute left-0 right-0 border-t border-gray-200" />
         ))}
 
         {/* Sessions positioned by time with overlap handling */}
@@ -349,11 +330,7 @@ const RoomColumn: React.FC<{
   )
 }
 
-const TimeColumn: React.FC<{ startHour: number; endHour: number; pixelsPerHour: number }> = ({
-  startHour,
-  endHour,
-  pixelsPerHour,
-}) => {
+const TimeColumn: React.FC<{ startHour: number; endHour: number; pixelsPerHour: number }> = ({ startHour, endHour, pixelsPerHour }) => {
   const hours: number[] = []
   for (let h = startHour; h <= endHour; h++) {
     hours.push(h)
@@ -437,7 +414,7 @@ export default function ConferenceScheduler() {
             <button
               onClick={() => setViewMode('pair1')}
               className={`w-[15rem] h-[4rem] rounded border-2 cursor-pointer ${
-                viewMode === 'pair1' ? 'bg-[#FFA300] border-[#FFA300]' : 'bg-white border-[#FFA300]'
+                viewMode === 'pair1' ? 'bg-[var(--color-primary)] border-[var(--color-primary)]' : 'bg-white border-[var(--color-primary)]'
               }`}
             >
               <h2 className="text-base font-bold text-black text-balance text-center">ENB 118 + 116</h2>
@@ -445,12 +422,10 @@ export default function ConferenceScheduler() {
             <button
               onClick={() => setViewMode('pair2')}
               className={`w-[15rem] h-[4rem] rounded border-2 cursor-pointer ${
-                viewMode === 'pair2' ? 'bg-[#FFA300] border-[#FFA300]' : 'bg-white border-[#FFA300]'
+                viewMode === 'pair2' ? 'bg-[var(--color-primary)] border-[var(--color-primary)]' : 'bg-white border-[var(--color-primary)]'
               }`}
             >
-              <h2 className="text-base font-bold text-black text-balance text-center">
-                Hall of Flags + ENB 109
-              </h2>
+              <h2 className="text-base font-bold text-black text-balance text-center">Hall of Flags + ENB 109</h2>
             </button>
           </div>
         </div>
@@ -469,15 +444,9 @@ export default function ConferenceScheduler() {
       </div>
 
       {/* Mobile: Dynamic room view (always two rooms) */}
-      <div
-        className={`lg:hidden px-3 pt-3 overflow-y-auto max-h-[600px] border-2 border-gray-200 rounded-lg mx-3 shadow-sm`}
-      >
+      <div className={`lg:hidden px-3 pt-3 overflow-y-auto max-h-[600px] border-2 border-gray-200 rounded-lg mx-3 shadow-sm`}>
         <div className={`relative`}>
-          <div
-            className={`grid gap-1 ${
-              viewMode === 'pair2' ? 'grid-cols-[20px_1.25fr_0.75fr]' : 'grid-cols-[20px_1fr_1fr]'
-            }`}
-          >
+          <div className={`grid gap-1 ${viewMode === 'pair2' ? 'grid-cols-[20px_1.25fr_0.75fr]' : 'grid-cols-[20px_1fr_1fr]'}`}>
             <TimeColumn startHour={START_HOUR} endHour={END_HOUR} pixelsPerHour={MOBILE_PIXELS_PER_HOUR} />
             {displayedRooms.map(room => (
               <div key={room.id}>

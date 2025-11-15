@@ -9,14 +9,9 @@ export default function Whatsapp() {
         </div>
 
         <div className={'flex flex-col items-center h-100% p-[2rem]'}>
-          <h2 className={'text-4xl tracking-tight font-bold text-center m-4'}>
-            Join WhatsApp Community of TechX
-          </h2>
+          <h2 className={'text-4xl tracking-tight font-bold text-center m-4'}>Join WhatsApp Community of TechX</h2>
 
-          <p className={'text-lg text-center text-balance mb-12'}>
-            {' '}
-            Network with attendees, get updates, and stay in the loop{' '}
-          </p>
+          <p className={'text-lg text-center text-balance mb-12'}> Network with attendees, get updates, and stay in the loop </p>
 
           <a
             className={'hover:scale-110 duration-300 ease-in-out cursor-pointer mt-2'}
@@ -24,7 +19,7 @@ export default function Whatsapp() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button id="WhatsappJoin" className={'w-[15rem] h-[4rem] bg-[#FFA300] rounded cursor-pointer'}>
+            <button id="WhatsappJoin" className={'w-[15rem] h-[4rem] bg-[var(--color-primary)] rounded cursor-pointer'}>
               <h2 className={'text-base font-bold text-black text-balance text-center'}>Join</h2>
             </button>
           </a>

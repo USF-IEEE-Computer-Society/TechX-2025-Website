@@ -8,19 +8,13 @@ export default function Navbar() {
       <nav className="w-full flex flex-col-reverse md:flex-row items-center justify-between md:px-30 py-5 bg-white shadow gap-2">
         <div className="flex items-center gap-6 text-2xl underline decoration-1 font-bold">
           <Link className={'hover:scale-105 duration-300 ease-in-out cursor-pointer mt-2'} to="/">
-            <button
-              id="HomeButton"
-              className={'w-[8rem] h-[3rem] bg-white border-2 border-[#FFA300] rounded cursor-pointer'}
-            >
+            <button id="HomeButton" className={'w-[8rem] h-[3rem] bg-white border-2 border-[var(--color-primary)] rounded cursor-pointer'}>
               <h2 className={'text-base font-bold text-black text-balance text-center'}>Home</h2>
             </button>
           </Link>
 
           <Link className={'hover:scale-105 duration-300 ease-in-out cursor-pointer mt-2'} to="/schedule">
-            <button
-              id="ScheduleButton"
-              className={'w-[8rem] h-[3rem] bg-white border-2 border-[#FFA300] rounded cursor-pointer'}
-            >
+            <button id="ScheduleButton" className={'w-[8rem] h-[3rem] bg-white border-2 border-[var(--color-primary)] rounded cursor-pointer'}>
               <h2 className={'text-base font-bold text-black text-balance text-center'}>Schedule</h2>
             </button>
           </Link>

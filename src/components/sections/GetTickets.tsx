@@ -7,8 +7,7 @@ export default function GetTickets() {
 
       <p className={'w-[80%] lg:w-[70%] text-lg text-white text-center text-balance pt-[1.5rem]'}>
         {' '}
-        Don't miss out on the opportunity to be a part of TechX Florida 2025. Register today to secure your
-        spot at this landmark event.
+        Don't miss out on the opportunity to be a part of TechX Florida 2025. Register today to secure your spot at this landmark event.
       </p>
 
       <RegistrationButtons />

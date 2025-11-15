@@ -42,12 +42,7 @@ export default function Companies() {
           <img src={icode} className="h-16 md:h-32" loading="lazy" />
         </a>
 
-        <a
-          href="https://www.tampajug.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center"
-        >
+        <a href="https://www.tampajug.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
           <img src={java} className="h-16 md:h-32 object-contain" loading="lazy" />
         </a>
 
@@ -57,12 +52,7 @@ export default function Companies() {
       </div>
 
       <div className="block md:hidden items-center justify-center mt-8">
-        <a
-          href="https://www.tampadevs.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center"
-        >
+        <a href="https://www.tampadevs.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
           <img src={tampadevsImg} className="h-16 md:h-32 object-contain" loading="lazy" />
         </a>
       </div>
@@ -91,23 +81,13 @@ export default function Companies() {
           <img src={icode} className="h-16 md:h-32" loading="lazy" />
         </a>
 
-        <a
-          href="https://www.tampajug.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center"
-        >
+        <a href="https://www.tampajug.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
           <img src={java} className="h-16 md:h-32 object-contain" loading="lazy" />
         </a>
       </div>
 
       <div className="md:flex md:flex-row md:gap-y-12 md:gap-x-8 hidden md:block">
-        <a
-          href="https://www.tampadevs.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center"
-        >
+        <a href="https://www.tampadevs.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
           <img src={tampadevsImg} className="h-16 md:h-32 object-contain" loading="lazy" />
         </a>
 

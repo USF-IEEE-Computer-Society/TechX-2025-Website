@@ -4,10 +4,7 @@ import { afterDarkCards } from '../../data/afterDarkData'
 
 export default function AfterDark() {
   return (
-    <div
-      id="AfterDark"
-      className={'w-full h-auto bg-[#0a0e27] flex flex-col items-center pb-[3rem] p-[1rem] overflow-hidden'}
-    >
+    <div id="AfterDark" className={'w-full h-auto bg-[#0a0e27] flex flex-col items-center pb-[3rem] p-[1rem] overflow-hidden'}>
       <div className={'w-full flex flex-col justify-center items-center mb-10 -mt-15'}>
         <h1 className={'text-[135px] md:text-[250px] tracking-tight pt-[1rem] font-custom neon-text'}>
           <div className="flex md:flex-row flex-col items-center gap-0 md:gap-10">
@@ -26,11 +23,7 @@ export default function AfterDark() {
           </div>
         </h1>
 
-        <p
-          className={
-            'w-[90%] text-md md:text-2xl text-ellipsis text-gray-300 text-center text-pretty -m-8 md:-m-18'
-          }
-        >
+        <p className={'w-[90%] text-md md:text-2xl text-ellipsis text-gray-300 text-center text-pretty -m-8 md:-m-18'}>
           {' '}
           Social & Fundraising event with no agenda right after TechX Florida 2025{' '}
         </p>
@@ -62,13 +55,8 @@ export default function AfterDark() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button
-          id="SignUpForAfterDark"
-          className={'w-[16rem] h-[4.25rem] bg-[#FFA300] rounded cursor-pointer'}
-        >
-          <h2 className={'text-base font-bold text-black text-balance text-center'}>
-            Sign Up for TechX After Dark
-          </h2>
+        <button id="SignUpForAfterDark" className={'w-[16rem] h-[4.25rem] bg-[var(--color-primary)] rounded cursor-pointer'}>
+          <h2 className={'text-base font-bold text-black text-balance text-center'}>Sign Up for TechX After Dark</h2>
         </button>
       </a>
     </div>

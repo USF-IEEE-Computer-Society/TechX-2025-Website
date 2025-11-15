@@ -33,16 +33,10 @@ export default function TeamCard(props: TeamCardProps) {
     <div className={'w-full flex flex-col rounded-xl mb-5 h-full'}>
       <img className={'object-cover rounded-t-xl w-full aspect-square'} src={props.headshot} loading="lazy" />
 
-      <div
-        className={
-          'shadow-2xl flex flex-col h-full pl-[0.75rem] pt-[1.5rem] pr-[0.75rem] pb-[1rem] rounded-b-xl'
-        }
-      >
+      <div className={'shadow-2xl flex flex-col h-full pl-[0.75rem] pt-[1.5rem] pr-[0.75rem] pb-[1rem] rounded-b-xl'}>
         <h2 className={'text-2xl font-bold break-words mb-4'}>{props.name}</h2>
 
-        <h3 className={'text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight break-words'}>
-          {props.major}
-        </h3>
+        <h3 className={'text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight break-words'}>{props.major}</h3>
 
         <p className={'text-md'}>{props.year}</p>
 

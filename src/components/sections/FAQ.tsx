@@ -79,9 +79,7 @@ export default function FAQ() {
 
   return (
     <div id="FAQ" className="w-full h-auto pb-[3rem] bg-[#F5F5F5] flex flex-col items-center">
-      <h1 className="text-[1.5rem] md:text-[2rem] tracking-tight font-bold pt-[2rem] mb-[1.25rem]">
-        Frequently Asked Questions
-      </h1>
+      <h1 className="text-[1.5rem] md:text-[2rem] tracking-tight font-bold pt-[2rem] mb-[1.25rem]">Frequently Asked Questions</h1>
 
       <div className="w-[90%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-[1rem]">
         {Questions.map(q => {
@@ -92,7 +90,7 @@ export default function FAQ() {
               {/* Header */}
               <div
                 className={[
-                  'flex flex-col border border-black bg-white hover:bg-[#FFA300] transition-colors',
+                  'flex flex-col border border-black bg-white hover:bg-[var(--color-primary)] transition-colors',
                   open ? 'rounded-t-[0.75rem] shadow-[0_0.5rem_2rem_rgba(0,0,0,0.12)]' : 'rounded-[0.75rem]',
                 ].join(' ')}
               >
@@ -105,10 +103,7 @@ export default function FAQ() {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
-                      className={[
-                        'w-[1.5rem] h-[1.5rem] transition-transform duration-200',
-                        open ? 'rotate-180' : 'rotate-0',
-                      ].join(' ')}
+                      className={['w-[1.5rem] h-[1.5rem] transition-transform duration-200', open ? 'rotate-180' : 'rotate-0'].join(' ')}
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="1.5"
@@ -132,10 +127,7 @@ export default function FAQ() {
               >
                 <div className="overflow-hidden">
                   <div className="px-[1.5rem] py-[1.25rem]">
-                    <p
-                      className="text-[1.0625rem] leading-[1.75rem] text-black/80"
-                      dangerouslySetInnerHTML={{ __html: q.Response }}
-                    ></p>
+                    <p className="text-[1.0625rem] leading-[1.75rem] text-black/80" dangerouslySetInnerHTML={{ __html: q.Response }}></p>
                   </div>
                 </div>
               </div>
