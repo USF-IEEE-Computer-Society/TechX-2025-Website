@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'BigMaker';
+    src: url('./assets/fonts/bigmaker.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@theme {
+    --font-custom: 'BigMaker', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFA300;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff8c00;
+}
+
+/* Firefox scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #FFA300 #1a1a1a;
+}
+
+
+a {
+    color: #00629B;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Roboto{
+    font-family: "Roboto Light", "Roboto Thin", serif;
+}
+
+@layer utilities {
+    .WhyAttendIconsDiv {
+        @apply w-[75px] h-[75px] md:w-[100px] md:h-[100px] rounded-full bg-[#FFA300] flex justify-center items-center mb-3;
+    }
+    .WhyAttendIcons {
+        @apply w-[35px] h-[35px] md:w-[50px] md:h-[50px];
+    }
+
+    .Pill {
+        @apply inline-flex self-start w-fit px-3 py-1 font-medium rounded-2xl md:rounded-full
+    }
+
+    .neon-text {
+        color: #00f3ff;
+        text-shadow: 
+            0 0 10px #00f3ff,
+            0 0 20px #00f3ff,
+            0 0 30px #00f3ff,
+            0 0 40px #00d4ff,
+            0 0 70px #00d4ff,
+            0 0 80px #00d4ff,
+            0 0 100px #00d4ff,
+            0 0 150px #00d4ff;
+        animation: neon-flicker 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes neon-flicker {
+        0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+            text-shadow: 
+                0 0 10px #00f3ff,
+                0 0 20px #00f3ff,
+                0 0 30px #00f3ff,
+                0 0 40px #00d4ff,
+                0 0 70px #00d4ff,
+                0 0 80px #00d4ff,
+                0 0 100px #00d4ff,
+                0 0 150px #00d4ff;
+        }
+        20%, 24%, 55% {
+            text-shadow: 
+                0 0 5px #00f3ff,
+                0 0 10px #00f3ff,
+                0 0 15px #00f3ff;
+        }
+    }
+
+    .nonflicker-neon {
+        color: #fef3c7;
+        text-shadow: 
+            0 0 1px #fde68a,
+            0 0 2px #fbbf24,
+            0 0 3px #fbbf24;
+    }
+
+    .neon-text-purple {
+        color: #c084fc;
+        text-shadow: 
+            0 0 10px #c084fc,
+            0 0 20px #c084fc,
+            0 0 30px #c084fc,
+            0 0 40px #a855f7,
+            0 0 70px #a855f7,
+            0 0 80px #a855f7,
+            0 0 100px #a855f7,
+            0 0 150px #a855f7;
+        animation: neon-flicker-purple 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes neon-flicker-purple {
+        0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+            text-shadow: 
+                0 0 10px #c084fc,
+                0 0 20px #c084fc,
+                0 0 30px #c084fc,
+                0 0 40px #a855f7,
+                0 0 70px #a855f7,
+                0 0 80px #a855f7,
+                0 0 100px #a855f7,
+                0 0 150px #a855f7;
+        }
+        20%, 24%, 55% {
+            text-shadow: 
+                0 0 5px #c084fc,
+                0 0 10px #c084fc,
+                0 0 15px #c084fc;
+        }
+    }
+
+    .afterdark-card {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-width: 2px;
+        border-radius: 0.75rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: normal;
+        font-size: 1.125rem;
+    }
+}
+
+
+
+
+
+

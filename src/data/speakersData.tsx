@@ -1,0 +1,124 @@
+import reginaldImg from "../assets/speakers/reginald.png";
+import raghuvanImg from "../assets/speakers/raghuvan.png";
+import mrinalImg from "../assets/speakers/mrinal.png";
+import annaImg from "../assets/speakers/anna.png";
+import yasmineImg from "../assets/speakers/yasmine.png";
+import joeImg from "../assets/speakers/joe.png";
+import antraImg from "../assets/speakers/antra.png";
+import subhajitImg from "../assets/speakers/subhajit.png";
+import lenarImg from "../assets/speakers/lenar.png";
+import sutapimg from "../assets/speakers/sutap.png";
+import michael from "../assets/speakers/michael.png";
+import mrunalimg from "../assets/speakers/mrunal.png";
+import israelImg from "../assets/speakers/israel.png";
+import joeyImg from "../assets/speakers/joey.png";
+
+
+export const speakersData = [
+    {
+        name: "Reginald Davis",
+        company: "Microsoft",
+        talkTitle: "Copilot in Action: Real-World AI Use Cases in Solutions.",
+        headshot: reginaldImg,
+        linkedinLink: "https://www.linkedin.com/in/reginald-j-davis-mcsa-mct-itil-prosci-970ba77/",
+        pills:["Speaker", "Panel"]
+    },
+    {
+        name: "Raghuvan Lakshmana",
+        company: "Atlassian",
+        talkTitle: "Interactive Document Search Using a Custom AI model",
+        headshot: raghuvanImg,
+        linkedinLink: "https://www.linkedin.com/in/raghavanl/",
+        pills:["Workshop"]
+    },
+    {
+        name: "Mrinal Karvir",
+        company: "Intel",
+        talkTitle: "The Last Mile of Generative AI: Turning Ideas into Impact at Enterprise Scale",
+        headshot: mrinalImg,
+        linkedinLink: "https://www.linkedin.com/in/mrinalkarvir/",
+        pills:["Speaker", "IEEECS"]
+    },
+    {
+        name: "Subhajit Paul",
+        company: "Jabil",
+        talkTitle: "AI application in ERP: Effective Mobile Material Placement in Warehouse using AI/ML",
+        headshot: subhajitImg,
+        linkedinLink: "https://www.linkedin.com/in/subhajit-paul-4a79a78/",
+        pills:["Speaker", "IEEECS"]
+    },
+    {
+        name: "Mrunal Gangrade",
+        company: "JPMorgan Chase",
+        talkTitle: "Bridging the Gap Between Black Box Models and Business Risk: Explainable AI in Regulated Industries",
+        headshot: mrunalimg,
+        linkedinLink: "https://www.linkedin.com/in/mrunal-gangrade-8087121b5/",
+        pills:["Speaker","Panel"]
+    },
+    {
+        name: "Anna Bakhvalova",
+        company: "Career Pathway Institute",
+        talkTitle: "AI's Impact on Marketing: Trends and Anti-trends",
+        headshot: annaImg,
+        linkedinLink: "https://www.linkedin.com/in/annabakhvalova/",
+        pills:["Speaker", "Panel"]
+    },
+    {
+        name: "Yasmine Gardiner",
+        company: "DataScrubber.AI",
+        talkTitle: "Vibe coding workshop",
+        headshot: yasmineImg,
+        linkedinLink: "https://www.linkedin.com/in/yasmine-gardiner-0b0720100/",
+        pills:["Workshop"]
+    },
+    {
+        name: "Joe Blankership",
+        company: "A Valid Company",
+        talkTitle: "Playing with AI: Gamification for Endangered Language Models",
+        headshot: joeImg,
+        linkedinLink: "https://www.linkedin.com/in/thejoeblankenship/",
+        pills:["Speaker"]
+    },
+    {
+        name: "Joey de Villa",
+        company: "Kforce Inc",
+        talkTitle: "",
+        headshot: joeyImg,
+        linkedinLink: "https://www.linkedin.com/in/joeydevilla/",
+        pills:["Panel"]
+    },
+    {
+        name: "Michael Viron",
+        company: "KontactIntelligence/VetCV",
+        talkTitle: "",
+        headshot: michael,
+        linkedinLink: "https://www.linkedin.com/in/michaelviron/",
+        pills:["PanelModerator"]
+    },
+    {
+        name: "Antra Malhotra",
+        company: "Verizon",
+        talkTitle: "Building Applied AI Solutions: From Experimentation to Enterprise Impact",
+        headshot: antraImg,
+        linkedinLink: "https://www.linkedin.com/in/antra-malhotra-455b608/",
+        pills:["Speaker", "IEEECS"]
+    },
+    {
+        name: "Sutap Chatterjee",
+        company: "Verizon",
+        talkTitle: "Building Applied AI Solutions: From Experimentation to Enterprise Impact",
+        headshot: sutapimg,
+        linkedinLink: "https://www.linkedin.com/in/sutapchatterjee/",
+        pills:["Speaker"]
+    },
+    {
+        name: "Israel Vega Jr",
+        company: "Microsoft",
+        talkTitle: "Measuring the Success of AI Projects",
+        headshot: israelImg,
+        linkedinLink: "https://www.linkedin.com/in/ivega/",
+        pills:["Speaker"]
+    },
+];
+
+export default speakersData;
