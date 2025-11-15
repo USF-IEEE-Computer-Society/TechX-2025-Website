@@ -11,7 +11,7 @@ import { SpeedInsights } from '@vercel/speed-insights/react'
 import Report from './components/Report'
 import Year2026 from './Year2026'
 
-const CURRENT_YEAR = '2025'
+export const CURRENT_YEAR = '2025'
 
 function App() {
   return (
