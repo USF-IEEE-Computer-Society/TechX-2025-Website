@@ -1,4 +1,5 @@
 import gbm from '../../assets/gbm.webp'
+import Button from '../elements/Button'
 
 export default function Whatsapp() {
   return (
@@ -19,9 +20,7 @@ export default function Whatsapp() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button id="WhatsappJoin" className={'w-[15rem] h-[4rem] bg-[var(--color-primary)] rounded cursor-pointer'}>
-              <h2 className={'text-base font-bold text-black text-balance text-center'}>Join</h2>
-            </button>
+            <Button id="WhatsappJoin" text="Join" />
           </a>
         </div>
       </div>

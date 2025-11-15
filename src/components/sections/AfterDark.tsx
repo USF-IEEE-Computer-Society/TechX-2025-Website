@@ -1,6 +1,7 @@
 import AfterDarkCard from '../elements/AfterDarkCard'
 import AfterDarkInfoCard from '../elements/AfterDarkInfoCard'
 import { afterDarkCards } from '../../data/afterDarkData'
+import Button from '../elements/Button'
 
 export default function AfterDark() {
   return (
@@ -55,9 +56,7 @@ export default function AfterDark() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button id="SignUpForAfterDark" className={'w-[16rem] h-[4.25rem] bg-[var(--color-primary)] rounded cursor-pointer'}>
-          <h2 className={'text-base font-bold text-black text-balance text-center'}>Sign Up for TechX After Dark</h2>
-        </button>
+        <Button id="SignUpForAfterDark" text="Sign Up for TechX After Dark" />
       </a>
     </div>
   )

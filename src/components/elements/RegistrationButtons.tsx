@@ -1,3 +1,5 @@
+import Button from './Button'
+
 export default function RegistrationButtons() {
   return (
     <div className={'flex flex-col md:flex-row gap-x-7 gap-y-0 mt-1 md:mt-5'}>
@@ -7,9 +9,7 @@ export default function RegistrationButtons() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button id="SignUpAsUSF" className={'w-[15rem] h-[4rem] bg-[#FFA300] rounded cursor-pointer'}>
-          <h2 className={'text-base font-bold text-black text-balance text-center'}>Sign Up as USF Student</h2>
-        </button>
+        <Button id="SignUpAsUSF" text="Sign Up as USF Student" />
       </a>
 
       <a
@@ -18,9 +18,7 @@ export default function RegistrationButtons() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button id="SignUpAsNonUSF" className={'w-[15rem] h-[4rem] bg-[#FFA300] border-2 border-[#FFA300] rounded cursor-pointer'}>
-          <h2 className={'text-base font-bold text-black text-balance text-center'}> Sign Up as Non-USF Student </h2>
-        </button>
+        <Button id="SignUpAsNonUSF" text="Sign Up as Non-USF Student" />
       </a>
 
       <a
@@ -29,9 +27,7 @@ export default function RegistrationButtons() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button id="SignUpAsGuest" className={'w-[15rem] h-[4rem] bg-[#FFA300] border-2 border-[#FFA300] rounded cursor-pointer'}>
-          <h2 className={'text-base font-bold text-black text-balance text-center'}> Sign Up as Guest </h2>
-        </button>
+        <Button id="SignUpAsGuest" text="Sign Up as Guest" />
       </a>
     </div>
   )
