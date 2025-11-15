@@ -7,6 +7,7 @@ import NotFound from './components/NotFound'
 import Navbar from './components/sections/Navbar'
 import Footer from './components/sections/Footer'
 import AfterDark from './components/sections/AfterDark'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 function App() {
   return (
     <Router>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/afterdark" element={<AfterDark />} />
       </Routes>
       <Footer />
+      <SpeedInsights />
     </Router>
   )
 }
