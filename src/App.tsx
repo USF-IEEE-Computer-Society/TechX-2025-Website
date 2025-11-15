@@ -10,7 +10,7 @@ import AfterDark from './components/sections/AfterDark'
 function App() {
   return (
     <Router>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/schedule" element={<Schedule />} />
@@ -18,8 +18,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/afterdark" element={<AfterDark />} />
       </Routes>
-        <Footer/>
-
+      <Footer />
     </Router>
   )
 }
